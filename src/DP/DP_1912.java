@@ -1,6 +1,5 @@
 package DP;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class DP_1912 {
@@ -27,6 +26,6 @@ public class DP_1912 {
 		
 		System.out.println(ret);
 		
-		
+		sc.close();
 	}
 }

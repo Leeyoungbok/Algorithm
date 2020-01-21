@@ -19,6 +19,7 @@ public class DP_10844 {
 			}
 		}
 		System.out.println(dp[n-1]);
+		sc.close();
 	}
 
 }

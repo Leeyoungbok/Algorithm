@@ -1,4 +1,5 @@
 package Study;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -46,10 +47,10 @@ public class A형_원판돌리기 {
 			boolean check = removeNum(circle);
 			if (!check)
 				getAverage(circle);
-			
+
 		}
 		System.out.println(getSum(circle));
-
+		sc.close();
 	}
 
 	static void swap(int[][] circle, int x_i, int d_i, int k_i) {
@@ -106,14 +107,17 @@ public class A형_원판돌리기 {
 						for (int k = 0; k < 4; k++) {
 							int ax = x + dx[k];
 							int ay = y + dy[k];
-							if(ay == -1) ay = M-1;
-							if(ay == M) ay = 0;
-							if(ax== -1 || ax == N || circle[ax][ay] == 0 ) continue;
-							if(num == circle[ax][ay]) {
+							if (ay == -1)
+								ay = M - 1;
+							if (ay == M)
+								ay = 0;
+							if (ax == -1 || ax == N || circle[ax][ay] == 0)
+								continue;
+							if (num == circle[ax][ay]) {
 								circle[x][y] = 0;
 								circle[ax][ay] = 0;
 								removeCheck = true;
-								queue.add(new param(ax,ay));
+								queue.add(new param(ax, ay));
 							}
 						}
 					}

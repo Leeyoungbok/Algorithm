@@ -162,7 +162,7 @@ public class 새로운게임2 {
 				break;
 			ridingHorse[ax][ay][i + cnt2] = ridingHorse[x][y][i + cnt];
 			horse_X[ridingHorse[x][y][i + cnt]] = ax;
-			horse_Y[ridingHorse[x][y][i + cnt]] = ay;
+//			horse_Y[ridingHorse[x][y][i + lcnt]] = ay;
 			ridingHorse[x][y][i + cnt] = 0;
 		}
 		

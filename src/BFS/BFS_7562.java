@@ -38,22 +38,19 @@ public class BFS_7562 {
 				System.out.println(0);
 			} else {
 				queue.add(new param(start_X, start_Y));
-				while (!queue.isEmpty()) {
+				used[start_X][start_Y] = true;
+				loop: while (!queue.isEmpty()) {
 					param p = queue.poll();
 					for (int i = 0; i < 8; i++) {
 						int ax = p.x + dx[i];
 						int ay = p.y + dy[i];
-						if ((ax == start_X && ay == start_Y) || ax < 1 || ax > I || ay < 1 || ay > I)
+						if ( ax < 1 || ax > I || ay < 1 || ay > I || used[ax][ay] )
 							continue;
-						if (map[ax][ay] == 0) {
-							map[ax][ay] = map[p.x][p.y] + 1;
-							queue.add(new param(ax, ay));
-						} else if (map[ax][ay] <= (map[p.x][p.y] + 1)) {
-							continue;
-						} else if (map[ax][ay] > (map[p.x][p.y] + 1)) {
-							queue.add(new param(ax, ay));
-							map[ax][ay] = map[p.x][p.y] + 1;
-						}
+						map[ax][ay] = map[p.x][p.y]+1;
+						if(ax == end_X && ay == end_Y)
+							break loop;
+						queue.add(new param(ax, ay));
+						used[ax][ay] = true;
 					}
 				}
 				System.out.println(map[end_X][end_Y]);

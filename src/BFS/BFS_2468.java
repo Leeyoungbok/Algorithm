@@ -37,12 +37,12 @@ public class BFS_2468 {
 			}
 		}
 
-		for (int height_i = 1; height_i < N+1; height_i++) {
+		for (int height_i = 1; height_i < 101; height_i++) {
 			if (!height[height_i])
 				continue;
+			
 			cityCheck = new boolean[N + 1][N + 1];
 			used = new boolean[N + 1][N + 1];
-
 			int groupCnt = 0;
 
 			for (int i = 1; i <= N; i++) {
@@ -75,11 +75,11 @@ public class BFS_2468 {
 
 				}
 			}
-			System.out.println(height_i + " " + groupCnt);
 			ans = Math.max(ans, groupCnt);
 		}
 		System.out.println(ans);
-
+		sc.close();
 	}
+
 
 }

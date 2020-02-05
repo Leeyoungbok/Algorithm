@@ -56,6 +56,7 @@ public class BFS_7562 {
 				System.out.println(map[end_X][end_Y]);
 			}
 		}
+		sc.close();
 	}
 
 }

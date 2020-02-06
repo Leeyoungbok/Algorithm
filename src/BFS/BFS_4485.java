@@ -29,40 +29,34 @@ public class BFS_4485 {
 			Queue<parameter> queue = new LinkedList<parameter>();
 
 			int[][] map = new int[N + 1][N + 1];
+			int[][] used = new int[N + 1][N + 1];
 			boolean[][] check = new boolean[N + 1][N + 1];
 			for (int i = 1; i <= N; i++) {
 				for (int j = 1; j <= N; j++) {
-					map[i][j] = sc.nextInt() * -1;
+					map[i][j] = sc.nextInt();
 				}
 			}
 
 			queue.add(new parameter(1, 1));
+			used[1][1] -= map[1][1];
 			check[1][1] = true;
 			while (!queue.isEmpty()) {
 				parameter p = queue.poll();
-				if (p.x == N && p.y == N)
-					break;
-
 				for (int i = 0; i < 4; i++) {
 					int ax = p.x + dx[i];
 					int ay = p.y + dy[i];
 
 					if (ax < 1 || ax > N || ay < 1 || ay > N)
 						continue;
-					if (!check[ax][ay] || map[ax][ay] < map[p.x][p.y] + map[ax][ay]) {
-						map[ax][ay] = map[p.x][p.y] + map[ax][ay];
+					if ((!check[ax][ay] && used[ax][ay] == 0) || used[ax][ay] < used[p.x][p.y] - map[ax][ay]) {
+						used[ax][ay] = used[p.x][p.y] - map[ax][ay];
 						queue.add(new parameter(ax, ay));
 						check[ax][ay] = true;
 					}
 				}
 			}
-			for (int i = 1; i <= N; i++) {
-				for (int j = 1; j <= N; j++) {
-					System.out.print(map[i][j] + " ");
-				}
-				System.out.println();
-			}
-			System.out.println("Problem " + cnt + ": " + map[N][N]);
+			
+			System.out.println("Problem " + cnt + ": " + used[N][N] * (-1));
 			cnt++;
 		}
 	}

@@ -35,15 +35,85 @@ public class A형_야구 {
 					list.add(1);
 				list.add(sortPerson[i]);
 			}
-			int score = 0;
+			int score = 0;		        
+			 int batting_order = 0; // 타순
 			for (int i = 1; i <= N; i++) {
+//				 int out_cnt = 0;
+//		         boolean[] base = new boolean[4];
+//				 while (true) {
+//		                // 타자의 정보 한개를 가지고 온다
+//		                int infor = hit[i][list.get(batting_order)];
+//		                
+//		                // 타순을 바꿔준다
+//		                if (batting_order == 8) {
+//		                    batting_order = 0;
+//		                } else
+//		                    batting_order++;
+//		                
+//		                // 타자의 정보마다 다른 실행을 한다.
+//		                if (infor == 0) {
+//		                    out_cnt++;
+//		                    if (out_cnt >= 3) {
+//		                        break;
+//		                    }
+//		                } else if (infor == 1) {
+//		                    if(base[3]) {
+//		                        score++;
+//		                        base[3] = false;
+//		                    }
+//		                    for (int j = 2; j >= 0; j--) {
+//		                        if(base[j]) {
+//		                            base[j] = false;
+//		                            base[j+1] = true;
+//		                        }
+//		                    }
+//		                    base[1] = true;
+//		                } else if (infor == 2) {
+//		                    if(base[3]) {
+//		                        score++;
+//		                        base[3] = false;
+//		                    }
+//		                    if(base[2]) {
+//		                        score++;
+//		                        base[2] = false;
+//		                    }
+//		                    if(base[1]) {
+//		                        base[1] = false;
+//		                        base[3] = true;
+//		                    }
+//		                    base[2] = true;
+//		                } else if (infor == 3) {
+//		                    for (int j = 1; j <= 3; j++) {
+//		                        if(base[j]) {
+//		                            score++;
+//		                            base[j] = false;
+//		                        }
+//		                    }
+//		                    base[3] = true;
+//		                } else if (infor == 4) {
+//		                    for (int j = 1; j <= 3; j++) {
+//		                        if(base[j]) {
+//		                            score++;
+//		                            base[j] = false;
+//		                        }
+//		                    }
+//		                    score++;
+//		                }
+//		            }
 				int outCnt = 0;
 				boolean[] round = new boolean[4];
 				while (true) {
-					int who = list.remove(0);
+					int who = list.get(batting_order);
 					int run = hit[i][who];
+					if (batting_order == 8) {
+	                    batting_order = 0;
+	                } else
+	                    batting_order++;
 					if (run == 0) {
-						outCnt++;
+						outCnt++;{
+							if (outCnt == 3)
+								break;
+						}
 					} else {
 						if (run == 4)
 							score++;
@@ -61,23 +131,11 @@ public class A형_야구 {
 								round[j] = true;
 						}
 					}
-					list.add(who);
-					if (outCnt == 3)
-						break;
+					
 				}
 			}
 			if (ans < score)
 				ans = score;
-			if(ans == 89){
-				ArrayList<Integer> list2 = new ArrayList<Integer>();
-
-				for (int i = 0; i < toSort.length; i++) {
-					if (i == 3)
-						list2.add(1);
-					list2.add(sortPerson[i]);
-				}
-				System.out.println(list2);
-			}
 			return;
 		}
 

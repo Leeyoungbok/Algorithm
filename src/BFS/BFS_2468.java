@@ -78,8 +78,7 @@ public class BFS_2468 {
 			ans = Math.max(ans, groupCnt);
 		}
 		System.out.println(ans);
-		sc.close();
-	}
 
+	}
 
 }

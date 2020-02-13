@@ -7,17 +7,15 @@ import java.util.Scanner;
 class pipe implements Comparable<pipe>{
 	int x;
 	int y;
-	int cnt;
-	pipe(int x, int y, int cnt) {
+	pipe(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.cnt = cnt;
 	}
 
 	@Override
 	public int compareTo(pipe o) {
 		// TODO Auto-generated method stub
-		return o.cnt - this.cnt;
+		return o.y - this.y;
 	}
 }
 
@@ -44,7 +42,7 @@ public class BFS_3109 {
 		}
 
 		for (int i = 1; i <= Row; i++) {
-			queue.add(new pipe(i, 1,0));
+			queue.add(new pipe(i, 1));
 			map[i][1] = 'x';
 //			used[i][1] = true;
 			while (!queue.isEmpty()) {
@@ -65,7 +63,7 @@ public class BFS_3109 {
 						queue.clear();
 						break;
 					}
-					queue.add(new pipe(ax, ay,p.cnt+1));
+					queue.add(new pipe(ax, ay));
 				}
 			}
 		}
@@ -2112,4 +2110,4 @@ public class BFS_3109 {
 //.......................xx.........x..........xx...........................x.......x...........x.x.........................x.................................x.......x.............................x...x.
 //........x.......x...x.......x...x.x..................x...........x............x...................x.....x............................x............x.........................................x...........
 //..x........xx.......x.......................................x.............................................x.......................................................................x..x..................
-// 정상출력 981
+// 정상출

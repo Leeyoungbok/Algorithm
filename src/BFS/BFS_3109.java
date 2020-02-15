@@ -1,12 +1,12 @@
 package BFS;
 
-import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-class pipe implements Comparable<pipe>{
+class pipe implements Comparable<pipe> {
 	int x;
 	int y;
+
 	pipe(int x, int y) {
 		this.x = x;
 		this.y = y;
@@ -14,7 +14,8 @@ class pipe implements Comparable<pipe>{
 
 	@Override
 	public int compareTo(pipe o) {
-		// TODO Auto-generated method stub
+		if (o.y == this.y)
+			return this.y - o.y;
 		return o.y - this.y;
 	}
 }
@@ -67,7 +68,8 @@ public class BFS_3109 {
 				}
 			}
 		}
-			System.out.println(ans);
+		System.out.println(ans);
+		sc.close();
 
 	}
 }

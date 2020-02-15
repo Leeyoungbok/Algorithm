@@ -22,6 +22,7 @@ public class BruteForce_10597 {
 		arr = new int[str.length()];
 
 		solve(0, 0);
+		sc.close();
 	}
 
 	static void solve(int idx, int n) {

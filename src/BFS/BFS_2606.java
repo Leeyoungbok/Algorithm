@@ -35,6 +35,7 @@ public class BFS_2606 {
 			}
 		}
 		System.out.println(ans);
+		sc.close();
 	}
 
 }

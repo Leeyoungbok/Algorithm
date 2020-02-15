@@ -58,7 +58,9 @@ public class BFS_4485 {
 			
 			System.out.println("Problem " + cnt + ": " + used[N][N] * (-1));
 			cnt++;
+			
 		}
+		sc.close();
 	}
 
 }

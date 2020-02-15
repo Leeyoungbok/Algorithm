@@ -59,6 +59,7 @@ public class BFS_2644 {
 		}else {
 			System.out.println(Math.abs(degree[p1]-degree[p2]));
 		}
+		sc.close();
 	}
 	
 }

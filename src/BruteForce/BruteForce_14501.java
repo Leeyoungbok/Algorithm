@@ -23,6 +23,7 @@ public class BruteForce_14501 {
 		
 		solve(0, 1);
 		System.out.println(max);
+		sc.close();
 	}
 	
 	static void solve(int idx, int n) {

@@ -31,10 +31,10 @@ public class BFS_2583 {
 		Queue<square> queue = new LinkedList<square>();
 		int M = Integer.parseInt(st.nextToken());
 		int N = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
 
 		map = new int[N + 1][M + 1];
 		used = new boolean[N + 1][M + 1];
-		int K = Integer.parseInt(st.nextToken());
 		
 		for (int i = 0; i < K; i++) {
 			st = new StringTokenizer(br.readLine(), " ");

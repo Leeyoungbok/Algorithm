@@ -50,14 +50,14 @@ public class BruteForce_14502 {
 
 	static void solve(int cnt) {
 		if(cnt ==0) {
-			bfs();
 //			System.out.println("virus가 퍼져나갔습니다.");
 //			for (int i = 1; i <= N; i++) {
 //				for (int j = 1; j <= M; j++) {
-//					System.out.print(copy[i][j] + " ");
+//					System.out.print(map[i][j] + " ");
 //				}
 //				System.out.println();
 //			}
+			bfs();
 			int max = countZero(copy);
 			ans = ans < max ? max : ans;
 			return;

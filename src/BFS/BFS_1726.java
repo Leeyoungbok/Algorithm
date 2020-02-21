@@ -65,7 +65,7 @@ public class BFS_1726 {
 		check[startX][startY] = true;
 		bfs();
 		System.out.println(ans);
-
+		sc.close();
 	}
 
 	static int findDir(int d, int dir) {

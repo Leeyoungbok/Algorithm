@@ -43,6 +43,7 @@ public class 소문난칠공주 {
 			solve(0, 0, 0);
 			System.out.println(ans);
 		}
+		sc.close();
 	}
 
 	static void solve(int idx, int cnt, int n) {
@@ -51,7 +52,16 @@ public class 소문난칠공주 {
 		
 		
 		if (cnt == 7 && n >= 4) {
-			ans++;
+			for(int i = 0 ; i < 5 ; i++) {
+				for(int j = 0 ; j < 5 ; j++) {
+					if(used[i][j]) {
+						if(bfs(7,i,j)) {
+							ans++;
+						}
+						return;
+					}
+				}
+			}
 			return;
 		}
 
@@ -60,16 +70,6 @@ public class 소문난칠공주 {
 			int y = i%5;
 			if(!used[x][y]) {
 				used[x][y] = true;
-				if(!bfs(cnt+1,x,y)) {
-					for(int k = 0 ; k < 5 ; k++) {
-						for(int l = 0 ; l < 5 ; l++) {
-							System.out.print(used[k][l]+" ");
-						}
-						System.out.println();
-					}
-					System.out.println(x + " " + y);
-					return;
-				}
 				if(map[x][y] == 'S')
 					solve(i+1, cnt+1,n+1);
 				else
@@ -104,4 +104,3 @@ public class 소문난칠공주 {
 			return false;
 	}
 }
-

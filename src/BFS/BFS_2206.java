@@ -46,6 +46,7 @@ public class BFS_2206 {
 			System.out.println(ans);
 		else
 			System.out.println(-1);
+		sc.close();
 	}
 
 	static void bfs() {

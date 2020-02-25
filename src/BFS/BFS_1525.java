@@ -5,89 +5,95 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 class puzzle {
-	int pu;
 	int n;
+	int idx;
 
-	puzzle(int pu, int n) {
-		this.pu = pu;
+	puzzle(int n, int idx) {
 		this.n = n;
+		this.idx = idx;
 	}
 }
 
 public class BFS_1525 {
 	static int[] map = new int[9];
 	static boolean[] used = new boolean[87654322];
-	static int[] d = { -3, -1, 1, 3 };
+	static int[] dx = { -3, -1, 1, 3 };
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Deque<puzzle> queue = new LinkedList<>();
-		int n = 0;
+		int idx = 0;
+		int cnt = 0;
+		boolean ansCheck = false;
 		for (int i = 0; i < 9; i++) {
 			map[i] = sc.nextInt();
 			if (map[i] == 0)
-				n = i;
+				idx = i;
 		}
-		int cnt = 0;
+		int n1 = parseToInt(map);
+		queue.add(new puzzle(n1, idx));
+		used[isUsed(n1)] = true;
 		
-		queue.add(new puzzle(parseToInt2(map), n));
-		used[parseToInt(map)] = true;
-		boolean check01 = false;
 		while(!queue.isEmpty()) {
 			int size = queue.size();
+			
 			for(int i = 0 ; i < size ; i++) {
 				puzzle p = queue.poll();
-				if(parseToInt(p.pu) == 12345678) {
+				
+				if(isUsed(p.n) == 12345678) {
+					ansCheck = true;
 					System.out.println(cnt);
-					check01 = true;
 					System.exit(0);
 				}
+				
 				for(int k = 0 ; k < 4 ; k++) {
-					int an = p.n + d[k];
-					if(an < 0 || an > 8) continue;
-					int[] mapCopy = copy(p.pu);
+					int ax = p.idx + dx[k];
 					
-					swap(mapCopy, p.n, an);
-					int copyNum = parseToInt(mapCopy);
-					if(used[copyNum]) continue;
-					used[copyNum] = true;
-					queue.add(new puzzle(mapCopy, an));
+					if(ax < 0 || ax > 8) continue;
+					if((p.idx == 2 || p.idx == 5) && k == 2) continue;
+					if((p.idx == 3 || p.idx == 6) && k == 1) continue;
+					int swapNum = swap(p.n, p.idx, ax);
+					if(used[isUsed(swapNum)]) continue;
+					used[isUsed(swapNum)] = true;
+					queue.add(new puzzle(swapNum, ax));
 				}
+				
 			}
 			cnt++;
 		}
-		if(!check01)
+		if(!ansCheck)
 			System.out.println(-1);
-	}
-
-	static int[] swap(int[] map, int n, int an) {
-		int tmp = map[n];
-		map[n] = map[an];
-		map[an] = tmp;
-		return map;
-	}
-
-	static int[] copy(int[] map) {
-		int[] c = new int[9];
-		for (int i = 0; i < 9; i++) {
-			c[i] = map[i];
-		}
-		return c;
+		sc.close();
 	}
 	
-	static int parseToInt(int[] map) {
-		String str = "";
-		for(int i = 0 ; i < map.length-1 ; i++) {
-			str += map[i];
-		}
-		return Integer.parseInt(str);
-	}
-
-	static int parseToInt2(int[] map) {
+	
+	static int parseToInt(int[] map) { // o 
 		String str = "";
 		for(int i = 0 ; i < map.length ; i++) {
 			str += map[i];
 		}
 		return Integer.parseInt(str);
+	}
+	
+	static int isUsed(int n1) {
+		return n1 / 10;
+	}
+	
+	static int swap(int n1, int prevIdx, int nextIdx) {
+		int[] arr = new int[9];
+		for(int i = 8 ; i >= 0 ; i--) {
+			arr[i] = n1%10;
+			n1 /= 10;
+		}
+		int tmp = arr[prevIdx];
+		arr[prevIdx] = arr[nextIdx];
+		arr[nextIdx] = tmp;
+		int ret = 0;
+		int mul = 1;
+		for(int i = 8 ; i >= 0 ; i--) {
+			ret += arr[i] * mul;
+			mul *= 10;
+		}
+		return ret;
 	}
 }

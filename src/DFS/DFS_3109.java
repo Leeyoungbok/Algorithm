@@ -1,18 +1,7 @@
 package DFS;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
-//class pipe {
-//	int x;
-//	int y;
-//
-//	pipe(int x, int y) {
-//		this.x = x;
-//		this.y = y;
-//	}
-//}
 
 public class DFS_3109 {
 	static char[][] map;
@@ -41,6 +30,7 @@ public class DFS_3109 {
 			dfs(i,0);
 		}
 		System.out.println(ans);
+		sc.close();
 	}
 	static boolean dfs(int x, int y) {
 		if(y == Column) {

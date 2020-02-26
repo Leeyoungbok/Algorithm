@@ -34,6 +34,7 @@ public class D3_7234 {
 				}
 			}
 			System.out.println("#" + tc + " " + max);
+			sc.close();
 		}
 	}
 }

@@ -62,6 +62,7 @@ public class A형_파이프옮기기1_BFS {
 			}
 		}
 		System.out.println(ans);
+		sc.close();
 
 	}
 

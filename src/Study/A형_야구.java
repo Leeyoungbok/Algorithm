@@ -25,6 +25,7 @@ public class AÇü_¾ß±¸ {
 		boolean[] check = new boolean[toSort.length];
 		perm(toSort, sortPerson, check, 0);
 		System.out.println(ans);
+		sc.close();
 	}
 
 	static void perm(int[] toSort, int[] sortPerson, boolean[] check, int idx) {

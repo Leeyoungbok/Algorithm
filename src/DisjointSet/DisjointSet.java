@@ -25,6 +25,7 @@ public class DisjointSet {
 			union(p1,p1-1);
 		}
 		System.out.println(ans);
+		sc.close();
 	}
 	static int find(int n1) {
 		if(disjoint[n1] == n1)

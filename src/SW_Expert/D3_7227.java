@@ -29,7 +29,6 @@ public class D3_7227 {
 			for(int i= 0 ; i < n-1 ; i++) {
 				if(check[i] == true) continue;
 				int cnt = 0;
-				int c;
 				for(int j = i+1 ; j < n ; j++) {
 					int a = Math.min(x[i] - x[j] + y[i] - y[j], x[j] - x[i] + y[j] - y[i]);
 					if(min > a) {

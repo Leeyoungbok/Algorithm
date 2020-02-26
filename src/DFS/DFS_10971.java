@@ -26,6 +26,7 @@ public class DFS_10971 {
 
 		solve(0);
 		System.out.println(ans);
+		sc.close();
 	}
 
 	static void solve(int idx) {

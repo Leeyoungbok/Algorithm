@@ -28,6 +28,7 @@ public class D3_6913 {
 				}
 			}
 		}
+		sc.close();
 
 	}
 

@@ -1,7 +1,5 @@
 package Study;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 
 public class A형_파이프옮기기1 {
@@ -23,9 +21,7 @@ public class A형_파이프옮기기1 {
 		}
 		solve(1, 2, 1);
 		System.out.println(ans);
-		// 1 -> ㅡ
-		// 2 -> \
-		// 3 -> |
+		sc.close();
 	}
 
 	static void solve(int x, int y, int prevShape) {
@@ -47,7 +43,6 @@ public class A형_파이프옮기기1 {
 				continue;
 			solve(ax, ay, i);
 		}
-
 	}
-
+	
 }

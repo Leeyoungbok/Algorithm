@@ -23,6 +23,8 @@ class shark implements Comparable<shark> {
 			return -1;
 		if (this.y > o.y)
 			return 1;
+		if (this.y < o.y)
+			return -1;
 		return 1;
 	}
 }

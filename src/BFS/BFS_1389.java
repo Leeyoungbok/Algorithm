@@ -48,6 +48,14 @@ public class BFS_1389 {
 						gameCnt[i][j] = p.cnt+1;
 					}
 				}
+				for(int m = 1 ; m <= N ; m++) {
+					for(int mm = 1 ; mm <= N ; mm++) {
+						System.out.print(gameCnt[m][mm]);
+					}
+					System.out.println();
+					
+				}
+				System.out.println();
 			}
 		}
 		int min = 6000;

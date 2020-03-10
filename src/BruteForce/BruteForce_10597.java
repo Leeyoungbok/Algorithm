@@ -37,6 +37,16 @@ public class BruteForce_10597 {
 		} else if( n == str.length())
 			return;
 
+		
+		int n1 = Integer.parseInt(str.substring(n, n + 1));
+		if(n1 == 0) return;
+		if (n1 < 51 && !check[n1]) {
+			arr[idx] = n1;
+			check[n1] = true;
+			solve(idx + 1, n + 1);
+			check[n1] = false;
+		}
+		
 		if ((n + 1) < str.length()) {
 			if(Integer.parseInt(str.substring(n, n + 1)) == 0) return;
 			int n2 = Integer.parseInt(str.substring(n, n + 2));
@@ -46,14 +56,6 @@ public class BruteForce_10597 {
 				solve(idx + 1, n + 2);
 				check[n2] = false;
 			}
-		}
-		int n1 = Integer.parseInt(str.substring(n, n + 1));
-		if(n1 == 0) return;
-		if (n1 < 51 && !check[n1]) {
-			arr[idx] = n1;
-			check[n1] = true;
-			solve(idx + 1, n + 1);
-			check[n1] = false;
 		}
 		return;
 

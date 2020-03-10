@@ -1,6 +1,5 @@
 package Study;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A형_배열돌리기4 {
@@ -36,7 +35,7 @@ public class A형_배열돌리기4 {
 		
 		solve(0);
 		System.out.println(ans);
-		
+		sc.close();
 	}
 	
 	static void solve(int idx) {
@@ -64,6 +63,7 @@ public class A형_배열돌리기4 {
 			int rowEnd = r[res[k]]+s[res[k]];
 			int columnStart = c[res[k]]-s[res[k]];
 			int columnEnd = c[res[k]]+s[res[k]];
+			
 			while(rowEnd != rowStart) {
 				int rightTop = matrixCopy[rowStart][columnEnd];
 				int leftBottom = matrixCopy[rowEnd][columnStart];

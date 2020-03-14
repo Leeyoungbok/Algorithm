@@ -65,6 +65,7 @@ public class MST_1922 {
 				}
 			}
 		}
+		sc.close();
 	}
 //805049
 }

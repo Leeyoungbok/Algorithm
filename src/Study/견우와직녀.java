@@ -81,5 +81,6 @@ public class 견우와직녀 {
 				}
 			}
 		}
+		sc.close();
 	}
 }

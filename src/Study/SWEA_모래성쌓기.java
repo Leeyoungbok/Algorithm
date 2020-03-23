@@ -26,9 +26,9 @@ public class SWEA_¸ð·¡¼º½×±â {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		int TC = Integer.parseInt(br.readLine());
+//		int TC = Integer.parseInt(br.readLine());
 
-		for (int tc = 1; tc <= TC; tc++) {
+//		for (int tc = 1; tc <= TC; tc++) {
 			Deque<sand> queue = new LinkedList<>();
 			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 			N = Integer.parseInt(st.nextToken());
@@ -48,7 +48,7 @@ public class SWEA_¸ð·¡¼º½×±â {
 			}
 
 			int ans = 0;
-			System.out.print("#" + tc + " ");
+//			System.out.print("#" + tc + " ");
 			while (!queue.isEmpty()) {
 				int size = queue.size();
 				for (int i = 0; i < size; i++) {
@@ -72,6 +72,6 @@ public class SWEA_¸ð·¡¼º½×±â {
 				ans++;
 			}
 			System.out.println(ans-1);
-		}
+//		}
 	}
 }

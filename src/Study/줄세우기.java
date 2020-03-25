@@ -5,35 +5,29 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class 음악프로그램 {
-	static int N, M, idx;
+public class 줄세우기 {
+	static int N, M, idx = 0;
 	static int[] arr, res;
 	static ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 	static Deque<Integer> queue = new LinkedList<>();
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
+		
 		N = sc.nextInt();
 		M = sc.nextInt();
-		idx = 0;
 		arr = new int[N + 1];
 		res = new int[N];
-
+		
 		for (int i = 0; i <= N; i++) {
 			list.add(new ArrayList<>());
 		}
+		
 		for (int i = 0; i < M; i++) {
-			int n1 = sc.nextInt();
-			if (n1 == 0)
-				break;
 			int prev = sc.nextInt();
-			for (int j = 0; j < n1-1; j++) {
-				int cur = sc.nextInt();
-				arr[cur]++;
-				list.get(prev).add(cur);
-				prev = cur;
-			}
+			int cur = sc.nextInt();
+			arr[cur]++;
+			list.get(prev).add(cur);
 		}
 
 		for (int i = 1; i <= N; i++) {
@@ -41,6 +35,7 @@ public class 음악프로그램 {
 				queue.add(i);
 			}
 		}
+		
 		for (int i = 1; i <= N; i++) {
 			if (queue.isEmpty()) {
 				System.out.println(0);
@@ -58,9 +53,10 @@ public class 음악프로그램 {
 		}
 		
 		for(int n1 : res) {
-			System.out.println(n1);
+			System.out.print(n1 + " ");
 		}
 		sc.close();
+
 	}
 
 }

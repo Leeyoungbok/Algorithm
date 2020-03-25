@@ -42,17 +42,19 @@ public class 직사각형탈출 {
 		used[Sr][Sc] = true;
 		int cnt = 1;
 		boolean check = false;
-		bfs : while (!queue.isEmpty()) {
+		bfs: while (!queue.isEmpty()) {
 			int size = queue.size();
-			for(int s = 0 ; s < size ; s++) {
+			for (int s = 0; s < size; s++) {
 				Point p = queue.poll();
-				for(int k = 0 ; k < 4 ; k++) {
+				for (int k = 0; k < 4; k++) {
 					int ax = p.x + dx[k];
 					int ay = p.y + dy[k];
-					
-					if(ax < 1 || ay < 1 || (ax + H - 1) > N || (ay + W - 1) > M || used[ax][ay]) continue;
-					if(!isContinue(ax, ay)) continue;
-					if(ax == Fr && ay == Fc) {
+
+					if (ax < 1 || ay < 1 || (ax + H - 1) > N || (ay + W - 1) > M || used[ax][ay])
+						continue;
+					if (!isContinue(ax, ay))
+						continue;
+					if (ax == Fr && ay == Fc) {
 						check = true;
 						break bfs;
 					}
@@ -62,17 +64,17 @@ public class 직사각형탈출 {
 			}
 			cnt++;
 		}
-		if(check)
+		if (check)
 			System.out.println(cnt);
 		else
 			System.out.println(-1);
 
 	}
-	
+
 	static boolean isContinue(int x, int y) {
-		for(int i = 0 ; i < list.size() ; i++) {
+		for (int i = 0; i < list.size(); i++) {
 			Point p = list.get(i);
-			if((x <= p.x && p.x <= (x+H-1)) && (y <= p.y && p.y <= (y+W-1)))
+			if ((x <= p.x && p.x <= (x + H - 1)) && (y <= p.y && p.y <= (y + W - 1)))
 				return false;
 		}
 		return true;

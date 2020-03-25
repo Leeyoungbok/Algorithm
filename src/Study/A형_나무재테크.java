@@ -5,21 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-class tree implements Comparable<tree> {
+class Tree implements Comparable<Tree> {
 	int x;
 	int y;
 	int z;
 
-	tree(int x, int y, int z) {
+	Tree(int x, int y, int z) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
 	@Override
-	public int compareTo(tree o) {
+	public int compareTo(Tree o) {
 		return this.z - o.z;
 	}
 }
@@ -29,8 +30,9 @@ public class A형_나무재테크 {
 	static int N, M, K;
 	static int[][] map;
 	static int[][] copy;
-	static ArrayList<tree> list = new ArrayList<tree>();
-	static ArrayList<tree> deadList = new ArrayList<tree>();
+	static PriorityQueue<Tree> list = new PriorityQueue<>();
+	static PriorityQueue<Tree> aliveList = new PriorityQueue<>();
+	static PriorityQueue<Tree> deadList = new PriorityQueue<>();
 	static int[] dx = { -1, -1, -1, 0, 0, 1, 1, 1 };
 	static int[] dy = { -1, 0, 1, -1, 1, -1, 0, 1 };
 
@@ -61,10 +63,9 @@ public class A형_나무재테크 {
 			int x = Integer.parseInt(st.nextToken());
 			int y = Integer.parseInt(st.nextToken());
 			int z = Integer.parseInt(st.nextToken());
-			list.add(new tree(x,y,z));
+			list.add(new Tree(x,y,z));
 		}
 		while (k < K) {
-			Collections.sort(list);
 			spring();
 			summer();
 			fall();
@@ -76,37 +77,38 @@ public class A형_나무재테크 {
 	}
 
 	static void spring() {
-		for (int i = 0; i < list.size(); i++) {
-			if (map[list.get(i).x][list.get(i).y] >= list.get(i).z) {
-				map[list.get(i).x][list.get(i).y] -= list.get(i).z;
-				list.get(i).z += 1;
-			} else {
-				deadList.add(list.remove(i));
-				i--;
+		while( ! list.isEmpty() ) {
+			Tree tree = list.poll();
+			//나무의 위치에 양분이 충분하다면 나무의 나이만큼 양분을 없애고 나이한살늘리고 alive 큐로 삽입
+			if( tree.z <= map[tree.x][tree.y] ) {
+				map[tree.x][tree.y] -= tree.z;
+				tree.z++;
+				aliveList.add(tree);
 			}
+			else
+				deadList.add(tree);
 		}
 	}
 
 	static void summer() {
 		while(!deadList.isEmpty()) {
-			tree t = deadList.remove(0);
+			Tree t = deadList.poll();
 			map[t.x][t.y] += t.z / 2;
 		}
 	}
 
 	static void fall() {
-		for (int i = 0; i < list.size(); i++) {
-			if (list.get(i).z % 5 == 0) {
-				tree t = list.get(i);
-				for (int k = 0; k < 8; k++) {
-					int ax = t.x + dx[k];
-					int ay = t.y + dy[k];
-
-					if (ax < 1 || ax > N || ay < 1 || ay > N)
-						continue;
-					list.add(new tree(ax, ay, 1));
+		while( !aliveList.isEmpty() ) {
+			Tree tree = aliveList.poll();
+			if( tree.z % 5 == 0 ) {
+				for(int d = 0; d < 8; d++) {
+					int nr = tree.x + dx[d];
+					int nc = tree.y + dy[d];
+					if( nr >= 1 && nc >= 1 && nr <= N && nc <= N)
+						list.add(new Tree(nr, nc, 1));
 				}
 			}
+			list.add(tree);
 		}
 	}
 

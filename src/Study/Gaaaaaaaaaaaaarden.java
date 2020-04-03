@@ -44,10 +44,9 @@ public class Gaaaaaaaaaaaaarden {
 		for (int i = 1; i <= N; i++) {
 			for (int j = 1; j <= M; j++) {
 				map[i][j] = sc.nextInt();
-				if (map[i][j] == 1) {
+				if (map[i][j] == 2) {
 					list.add(new Point(i, j));
 				}
-
 			}
 		}
 
@@ -89,60 +88,71 @@ public class Gaaaaaaaaaaaaarden {
 
 	static int bfs() {
 		copyMap();
-		used = new boolean[N + 1][M + 1];
 		cnt = new int[N + 1][M + 1];
-		int when = 0;
+		used = new boolean[N+1][M+1];
 		int ret = 0;
 		for (int i = 0; i < flower.length; i++) {
-			queue.add(flower[i]);
-		}
+			Flower f = flower[i];
+			if(!f.check) {
+				cnt[f.x][f.y] = 1; 
+			}else
+				cnt[f.x][f.y] = -1; 
+			queue.add(f);
+		}// false면 양수, true면 음수
 
-		while (!queue.isEmpty()) {// 수정
+		while (!queue.isEmpty()) {
 			int size = queue.size();
-			when++;
 			for (int s = 0; s < size; s++) {
 				Flower f = queue.poll();
-				if (copy[f.x][f.y] == 5)
+				if(used[f.x][f.y]) {
 					continue;
+				}
 				for (int k = 0; k < 4; k++) {
 					int ax = f.x + dx[k];
 					int ay = f.y + dy[k];
 
-					if (ax < 1 || ax > N || ay < 1 || ay > M || copy[ax][ay] == 0)
+					if (ax < 1 || ax > N || ay < 1 || ay > M || map[ax][ay] == 0 || used[ax][ay])
 						continue;
-
+//					if(Math.abs(cnt[ax][ay]) == Math.abs(cnt[f.x][f.y]) + 1) {
+//						used[ax][ay] = true;
+//						for(int l = 1 ; l <= N ; l++) {
+//							for(int m = 1 ; m <= M ; m++) {
+//								System.out.print(cnt[l][m] + " ");
+//							}System.out.println();
+//						}System.out.println();
+//						System.out.println(ax + " " + ay);
+//						ret++;
+//						continue;
+//					}
 					if (!f.check) {
-						if (cnt[ax][ay] == when && copy[ax][ay] == 4) {
-							copy[ax][ay] = 5;
-						} else if (cnt[ax][ay] == 0) {
+						if(cnt[ax][ay]*-1 == cnt[f.x][f.y] + 1) {
+							used[ax][ay] = true;
+							ret++;
+//							System.out.println(ax + " " + ay);
+							continue;
+						}
+						if(cnt[ax][ay] == 0) { // 빨간색
+							cnt[ax][ay] = cnt[f.x][f.y] + 1;
 							queue.add(new Flower(ax, ay, f.check));
-							copy[ax][ay] = 3;
-							cnt[ax][ay] = when;
 						}
 					} else {
-						if (cnt[ax][ay] == when && copy[ax][ay] == 3) {
-							copy[ax][ay] = 5;
-						} else if (cnt[ax][ay] == 0) {
-							queue.add(new Flower(ax, ay, f.check));
-							copy[ax][ay] = 4;
-							cnt[ax][ay] = when;
+						if(cnt[ax][ay]*-1 == cnt[f.x][f.y] -1) {
+							used[ax][ay] = true;
+							ret++;
+//							System.out.println(ax + " " + ay);
+							continue;
 						}
+						if(cnt[ax][ay] == 0){ // 얘는 초록색
+							cnt[ax][ay] = cnt[f.x][f.y] - 1;
+							queue.add(new Flower(ax, ay, f.check));
+						}						
 					}
 				}
 			}
 		}
-
-		for (int i = 1; i <= N; i++) {
-			for (int j = 1; j <= M; j++) {
-//				System.out.print(copy[i][j] + " ");
-				if (copy[i][j] == 5)
-					ret++;
-			}
-//			System.out.println();
-		}
-//		System.out.println();
-//		System.out.println(ret);
+//		System.out.println("중간결과" + ret);
 		return ret;
+		
 	}
 
 	static void copyMap() {

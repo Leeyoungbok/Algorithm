@@ -43,7 +43,7 @@ public class Dijkstra_1753 {
 		int start = sc.nextInt();
 		nodes[start] = 0;
 		queue.add(new edge(0,start,0));
-		
+//		boolean[] used = new boolean[V+1];
 		for(int i = 0 ; i < E ; i++) {
 			int n1 = sc.nextInt();
 			list.get(n1).add(new edge(n1, sc.nextInt(), sc.nextInt()));
@@ -51,8 +51,10 @@ public class Dijkstra_1753 {
 		
 		while(!queue.isEmpty()) {
 			edge e1 = queue.poll();
+//			if(used[e1.v]) continue;
+//			used[start] = true;
 			for(edge e2 : list.get(e1.v)) {
-				if(nodes[e2.v] > e2.w + nodes[e1.v]) { 
+				if(nodes[e2.v] > e2.w + nodes[e1.v]) {
 					nodes[e2.v] = e2.w + nodes[e1.v];
 					queue.add(new edge(e2.u, e2.v, nodes[e2.v]));
 				}

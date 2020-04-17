@@ -8,11 +8,11 @@ public class KMP_1701 {
 		Scanner sc = new Scanner(System.in);
 		
 		String input = sc.nextLine();
-		int[] pi = new int[input.length()];
 		int max = 0;
 		for(int s = 0 ; s < input.length() ; s++) {
 			int j = 0;
 			String subInput = input.substring(s, input.length());
+			int[] pi = new int[subInput.length()];
 			for(int i = 1 ; i < subInput.length() ; i++) {
 				while(j > 0 && subInput.charAt(i) != subInput.charAt(j)) {
 					j = pi[j-1];

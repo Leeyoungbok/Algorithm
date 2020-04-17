@@ -68,12 +68,12 @@ public class JO_Dijkstra_2097 {
 			}
 			
 			for(int i = 1 ; i <= N ; i++) {
-				if(used[i]) continue;
+				if(used[i]) continue; 
 				if(dist[i] > dist[s.e] + map[s.e][i]) {
 //					list.get(i).clear();
-//                    for(int n1 : list.get(s.e))
-//                        list.get(i).add(n1);
-//                    list.get(i).add(i);
+//                  for(int n1 : list.get(s.e))
+//                      list.get(i).add(n1);
+//                  list.get(i).add(i);
 					dist[i] = dist[s.e] + map[s.e][i];
 					queue.add(new Subway(s.e, i, dist[i]));
 				}

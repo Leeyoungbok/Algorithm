@@ -26,9 +26,9 @@ public class Dijkstra_1753 {
 		Scanner sc = new Scanner(System.in);
 		
 		int V = sc.nextInt();
-		int[] nodes = new int[V+1];
+		int[] dist = new int[V+1];
 		for(int i = 1 ; i <= V ; i++) {
-			nodes[i] = INF;
+			dist[i] = INF;
 		}
 		int E = sc.nextInt();
 		
@@ -40,32 +40,32 @@ public class Dijkstra_1753 {
 			list.add(new ArrayList<>());
 		}
 		
-		int start = sc.nextInt();
-		nodes[start] = 0;
-		queue.add(new edge(0,start,0));
-//		boolean[] used = new boolean[V+1];
 		for(int i = 0 ; i < E ; i++) {
 			int n1 = sc.nextInt();
 			list.get(n1).add(new edge(n1, sc.nextInt(), sc.nextInt()));
 		}
 		
+		int start = sc.nextInt();
+		dist[start] = 0;
+		queue.add(new edge(0,start,0));
+		boolean[] used = new boolean[V+1];
+		
 		while(!queue.isEmpty()) {
 			edge e1 = queue.poll();
-//			if(used[e1.v]) continue;
-//			used[start] = true;
+			used[start] = true;
 			for(edge e2 : list.get(e1.v)) {
-				if(nodes[e2.v] > e2.w + nodes[e1.v]) {
-					nodes[e2.v] = e2.w + nodes[e1.v];
-					queue.add(new edge(e2.u, e2.v, nodes[e2.v]));
+				if(!used[e2.v] && dist[e2.v] > e2.w + dist[e1.v]) {
+					dist[e2.v] = e2.w + dist[e1.v];
+					queue.add(new edge(e2.u, e2.v, dist[e2.v]));
 				}
 			}
 		}
 		
 		for(int i = 1 ; i <= V ; i++) {
-			if(nodes[i] == INF)
+			if(dist[i] == INF)
 				System.out.println("INF");
 			else
-				System.out.println(nodes[i]);
+				System.out.println(dist[i]);
 		}
 		sc.close();
 	}

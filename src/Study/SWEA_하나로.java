@@ -22,7 +22,7 @@ class Land implements Comparable<Land>{
 	}
 }
 
-public class SWEA_ÇÏ³ª·Î {
+public class SWEA_í•˜ë‚˜ë¡œ {
 	static int N;
 	static double E;
 	static PriorityQueue<Land> list = new PriorityQueue<>();

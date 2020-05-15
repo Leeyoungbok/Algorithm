@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class ¼±¹ß¸í´Ü {
+public class ì„ ë°œëª…ë‹¨ {
 	static int ans;
 	static int[][] arr;
 	static int[] res;

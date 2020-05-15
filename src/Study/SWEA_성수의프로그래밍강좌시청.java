@@ -3,7 +3,7 @@ package Study;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SWEA_¼º¼öÀÇÇÁ·Î±×·¡¹Ö°­ÁÂ½ÃÃ» {
+public class SWEA_ì„±ìˆ˜ì˜í”„ë¡œê·¸ë˜ë°ê°•ì¢Œì‹œì²­ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

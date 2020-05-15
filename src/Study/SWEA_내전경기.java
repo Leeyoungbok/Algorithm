@@ -10,7 +10,7 @@ class team{
 		this.name02 = name02;
 	}
 }
-public class SWEA_³»Àü°æ±â {
+public class SWEA_ë‚´ì „ê²½ê¸° {
 	static int K, cnt;
 	static boolean check;
 	static boolean[] used;

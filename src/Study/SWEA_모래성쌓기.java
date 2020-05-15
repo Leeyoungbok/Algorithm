@@ -17,7 +17,7 @@ class sand {
 	}
 }
 
-public class SWEA_¸ð·¡¼º½×±â {
+public class SWEA_ëª¨ëž˜ì„±ìŒ“ê¸° {
 	static int[][] map;
 	static int N, M;
 	static int[] dx = { -1, -1, 0, 1, 1, 1, 0, -1 };

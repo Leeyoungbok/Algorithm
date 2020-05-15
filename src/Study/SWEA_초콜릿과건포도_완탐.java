@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class SWEA_ÃÊÄİ¸´°ú°ÇÆ÷µµ_¿ÏÅ½ {
+public class SWEA_ì´ˆì½œë¦¿ê³¼ê±´í¬ë„_ì™„íƒ{
 	static int result;
 	static int n, m;
 	static int[][] map;

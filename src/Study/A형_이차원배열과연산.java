@@ -19,7 +19,7 @@ class array implements Comparable<array>{
 		else return -1;
 	}
 }
-public class AÇü_ÀÌÂ÷¿ø¹è¿­°ú¿¬»ê {
+public class Aí˜•_ì´ì°¨ì›ë°°ì—´ê³¼ì—°ì‚°{
 	static int R, C, K, ans;
 	static int rowCnt = 3;
 	static int columnCnt = 3;
@@ -87,7 +87,7 @@ public class AÇü_ÀÌÂ÷¿ø¹è¿­°ú¿¬»ê {
 							map[i][jj] = 0;
 						}
 					}
-					//³ª¸ÓÁö¸¦ 0À¸·Î Ã¤¿ö¾ßÇÔ
+					//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					ret = 2*size > ret ? 2*size : ret;
 					break;
 				}
@@ -149,4 +149,4 @@ public class AÇü_ÀÌÂ÷¿ø¹è¿­°ú¿¬»ê {
 //2 1 1 3 0 0 
 //3 1 0 0 0 0 
 //1 1 0 0 0 0 
-//ÇØ´çÄÉÀÌ½º ¤º
+//ï¿½Ø´ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½

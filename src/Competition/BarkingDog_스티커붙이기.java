@@ -2,12 +2,12 @@ package Competition;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-// ÀÔ·Â ¹ÞÀ½
-// 2Â÷¿ø ¹è¿­ ¾È¿¡ ³Ö°í ³Ö¾îº½. ¾ÈµÊ? µ¹·Áº½. 
-// ¾ÈµÊ? ±×·³ ´ÙÀ½°Å
-// ÀÌ·¸°Ô 4¹ø ¹Ýº¹ µ¹¸®¸é µÇ´Â ¹®Á¦¿´À½
-// Àç±Í¸¦ ÅëÇØ ¿ÏÅ½À» µ¹¸± ÇÊ¿ä°¡ ÀüÇô ¾øÀ½
-public class BarkingDog_½ºÆ¼Ä¿ºÙÀÌ±â {
+// ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½
+// 2ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­ ï¿½È¿ï¿½ ï¿½Ö°ï¿½ ï¿½Ö¾îº½. ï¿½Èµï¿½? ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. 
+// ï¿½Èµï¿½? ï¿½×·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½Ì·ï¿½ï¿½ï¿½ 4ï¿½ï¿½ ï¿½Ýºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+// ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ä°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+public class BarkingDog_ìŠ¤í‹°ì»¤ë¶™ì´ê¸° {
 	static int N, M, K, ans = 0;
 	static int[][] map;
 	static int[] cnt;

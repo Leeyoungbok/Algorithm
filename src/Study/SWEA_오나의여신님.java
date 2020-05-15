@@ -15,7 +15,7 @@ class Queen {
 	}
 }
 
-public class SWEA_¿À³ªÀÇ¿©½Å´Ô {
+public class SWEA_ì˜¤ë‚˜ì˜ì—¬ì‹ ë‹˜ {
 	static int N, M;
 	static int[][] map;
 	static boolean[][] used;
@@ -41,7 +41,7 @@ public class SWEA_¿À³ªÀÇ¿©½Å´Ô {
 				for (int j = 1; j <= M; j++) {
 					char ch = str.charAt(j - 1);
 					if (ch == 'D')
-						map[i][j] = -4; // -4 ¿©½Å °ø°£ -3 µ¹¸ÍÀÌ -2 ¼ö¿¬ÀÌ -1 ¾Ç¸¶
+						map[i][j] = -4; // -4 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ -3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -2 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -1 ï¿½Ç¸ï¿½
 					else if (ch == 'X')
 						map[i][j] = -3;
 					else if (ch == 'S') {

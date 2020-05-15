@@ -1,6 +1,6 @@
 package Competition;
 
-public class Programmers_ÆùÄÏ¸ó {
+public class Programmers_í°ì¼“ëª¬ {
 	public static void main(String[] args) {
 		int[] nums = new int[6];
 		int len = nums.length;

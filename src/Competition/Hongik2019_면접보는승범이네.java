@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Hongik2019_¸éÁ¢º¸´Â½Â¹üÀÌ³× {
+public class Hongik2019_ë©´ì ‘ë³´ëŠ”ìŠ¹ë²”ì´ë„¤{
    static int N, M, K, maxCity;
    static long maxCost;
    static long[] city;
@@ -25,14 +25,14 @@ public class Hongik2019_¸éÁ¢º¸´Â½Â¹üÀÌ³× {
       boolean[] used = new boolean[N+1];
       PriorityQueue<Edge> queue = new PriorityQueue<>();
       
-      for(int i = 0 ; i <= N ; i++) { // ÀÎÁ¢¸®½ºÆ® ÃÊ±âÈ­
+      for(int i = 0 ; i <= N ; i++) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ê±ï¿½È­
          list.add(new ArrayList<>());
-         city[i] = Long.MAX_VALUE; // °¢ Á¤Á¡ ÃÊ±âÈ­
+         city[i] = Long.MAX_VALUE; // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
       }
       
-      for(int i = 0 ; i < M ; i++) { // ÀÎÁ¢¸®½ºÆ® ÀúÀå 
+      for(int i = 0 ; i < M ; i++) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ 
          /*
-          * °¢ Á¤Á¡¿¡¼­ µµÂøÁö·ÎÀÇ °æ·Î°¡ ÁÖ¾îÁöÁö¸¸, ¹®Á¦ Á¶°ÇÀ» ¸¸Á·½ÃÅ°±â À§ÇØ ¿ª¹æÇâÀ¸·Î ÀúÀåÇÔ
+          * ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Î°ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
           */
          st = new StringTokenizer(br.readLine(), " ");
          int start = Integer.parseInt(st.nextToken()); 
@@ -43,18 +43,18 @@ public class Hongik2019_¸éÁ¢º¸´Â½Â¹üÀÌ³× {
       
       
       st = new StringTokenizer(br.readLine(), " ");
-      for(int i =0 ; i < K ; i++) { // µµÂøÁö¸¦ ÀÔ·Â¹Ş°í ¸ğµÎ Å¥¿¡ ³Ö¾îÁÜ
+      for(int i =0 ; i < K ; i++) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Ş°ï¿½ ï¿½ï¿½ï¿½ Å¥ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½
          int dest = Integer.parseInt(st.nextToken()); 
          city[dest] = 0;
          queue.add(new Edge(0, dest, 0));
       }
       
       int cnt = 0;
-      while(!queue.isEmpty()) { // ´ÙÀÍ½ºÆ®¶ó
+      while(!queue.isEmpty()) { // ï¿½ï¿½ï¿½Í½ï¿½Æ®ï¿½ï¿½
          Edge e = queue.poll();
-         if(used[e.end]) continue; // ¹æ¹®ÇÑ Á¤Á¡ÀÌ¸é continue
-         cnt++; // ÃÑ N°³ÀÇ Á¤Á¡À» ¸ğµÎ µ¹¾ÒÀ¸¸é Á¾·á
-         if(e.cost >= maxCost) { // cost°¡ ³ô°Å³ª °°À» °æ¿ì ÀÛÀº ¹øÈ£ÀÇ µµ½Ã ÀúÀå
+         if(used[e.end]) continue; // ï¿½æ¹®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì¸ï¿½ continue
+         cnt++; // ï¿½ï¿½ Nï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+         if(e.cost >= maxCost) { // costï¿½ï¿½ ï¿½ï¿½ï¿½Å³ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             if(e.cost > maxCost || e.end < maxCity) {
                maxCity = e.end; 
                maxCost = e.cost;

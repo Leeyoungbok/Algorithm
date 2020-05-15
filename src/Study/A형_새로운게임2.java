@@ -3,7 +3,7 @@ package Study;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AÇü_»õ·Î¿î°ÔÀÓ2 {
+public class Aí˜•_ìƒˆë¡œìš´ê²Œìž„2 {
 	static int N, K;
 	static int[][] Matrix;
 	static int[][][] map;
@@ -29,8 +29,8 @@ public class AÇü_»õ·Î¿î°ÔÀÓ2 {
 			int x = sc.nextInt();
 			int y = sc.nextInt();
 			int dir = sc.nextInt() - 1;
-			list.add(new Horse(x, y, dir)); // ¸®½ºÆ®¿¡´Â °¢ horse ÀÇ Á¤º¸°¡ ´ã°ÜÀÖÀ½ / idx´Â 1¹øºÎÅÍ ½ÃÀÛÇÔ.
-			map[x][y][0] = i + 1; // ¸»ÀÇ ¹øÈ£´Â 1ºÎÅÍ ½ÃÀÛÇÔ.
+			list.add(new Horse(x, y, dir)); // ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ horse ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ / idxï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
+			map[x][y][0] = i + 1; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£ï¿½ï¿½ 1ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 		}
 		
 		int len = list.size();
@@ -43,7 +43,7 @@ public class AÇü_»õ·Î¿î°ÔÀÓ2 {
 				int ax = x + dx[dir];
 				int ay = y + dy[dir];
 				if(ax < 1 || ax > N || ay < 1 || ay > N || Matrix[ax][ay] == 2) {
-					if(dir == 0) { // ÀÌµ¿ÇÏ°í list¿¡ ÀÖ´Â °ªµé ´Ù½Ã º¯°æÇØÁà¾ßÇÔ !!!
+					if(dir == 0) { // ï¿½Ìµï¿½ï¿½Ï°ï¿½ listï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ !!!
 						dir = 1;
 					}else if(dir == 1) {
 						dir = 0;
@@ -63,7 +63,7 @@ public class AÇü_»õ·Î¿î°ÔÀÓ2 {
 				if(Matrix[ax][ay] == 0) {
 					int afterIdx = 0;
 					int beforeIdx = 0;
-					for(int i = 0 ; i < K ; i++) { // ÀÌµ¿ÇÒ Ä­ °¡Àå ³ôÀº À§Ä¡ Ã£±â 
+					for(int i = 0 ; i < K ; i++) { // ï¿½Ìµï¿½ï¿½ï¿½ Ä­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ Ã£ï¿½ï¿½ 
 						if(map[ax][ay][i] == 0) {
 							afterIdx = i;
 							break;
@@ -84,7 +84,7 @@ public class AÇü_»õ·Î¿î°ÔÀÓ2 {
 						list.get(map[x][y][beforeIdx]).y = ay;
 						map[x][y][beforeIdx++] = 0;
 						if(i >= 3) {
-//							System.out.println("¿©±â 1");
+//							System.out.println("ï¿½ï¿½ï¿½ï¿½ 1");
 							System.out.println(ans);
 							return;
 						}
@@ -94,7 +94,7 @@ public class AÇü_»õ·Î¿î°ÔÀÓ2 {
 					int beforeIdx = 0;
 					int[] memo = new int[K];
 					int memoIdx = 0;
-					for(int i = 0 ; i < K ; i++) { // ÀÌµ¿ÇÒ Ä­ °¡Àå ³ôÀº À§Ä¡ Ã£±â 
+					for(int i = 0 ; i < K ; i++) { // ï¿½Ìµï¿½ï¿½ï¿½ Ä­ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ Ã£ï¿½ï¿½ 
 						if(map[ax][ay][i] == 0) {
 							afterIdx = i;
 							break;
@@ -126,7 +126,7 @@ public class AÇü_»õ·Î¿î°ÔÀÓ2 {
 						list.get(memo[memoIdx]).y = ay;
 						map[ax][ay][i] = memo[memoIdx--];
 						if(i >= 3) {
-//							System.out.println("¿©±â 2");
+//							System.out.println("ï¿½ï¿½ï¿½ï¿½ 2");
 //							System.out.println(ax + " " + ay);
 //							for(int n1 : map[ax][ay])
 //								System.out.println(n1);

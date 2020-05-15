@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class SWEA_´ÙÇ×½Ä°è»ê {
+public class SWEA_ë‹¤í•­ì‹ê³„ì‚° {
 	static int N, M;
 	static long[] arr, res;
 	static int[] t, a, b;

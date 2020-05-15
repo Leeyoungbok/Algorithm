@@ -4,7 +4,7 @@ import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class SWEA_ÆÄÇÎÆÄÇÎÁö·ÚÃ£±â {
+public class SWEA_íŒŒí•‘íŒŒí•‘ì§€ë¢°ì°¾ê¸° {
 	static int N;
 	static char[][] map;
 

@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class SWEA_³»Àü°æ±â2 {
+public class SWEA_ë‚´ì „ê²½ê¸°2 {
 	static int K;
 	static int[] used;
 	static boolean[][] map;

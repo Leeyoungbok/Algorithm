@@ -2,9 +2,9 @@ package DisjointSet;
 
 import java.util.Arrays;
 
-public class »óÈ£¹èÅ¸ÁıÇÕ_rank {
+public class ìƒí˜¸ë°°íƒ€ì§‘í•©_rank {
 	static int[] parents;
-	static int[] rank; // rank´Â Æ®¸®ÀÇ ³ôÀÌÀÌ±â¶§¹®¿¡.
+	static int[] rank; // rankï¿½ï¿½ Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì±â¶§ï¿½ï¿½ï¿½ï¿½.
 	public static void main(String[] args) {
 		// 0 0 0 0 0 0
 		parents = new int[6];
@@ -12,11 +12,11 @@ public class »óÈ£¹èÅ¸ÁıÇÕ_rank {
 		
 		for(int i = 0; i < parents.length; i++)
 			makeSet(i);
-		//makeSetÀ» ÅëÇØ ÀÚ½ÅÀÇ ºÎ¸ğ°¡ ÀÚ±âÀÚ½ÅÀ¸·Î ÁöÁ¤µÊ.
+		//makeSetï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½Î¸ï¿½ ï¿½Ú±ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 		//0 1 2 3 4 5
 		System.out.println(Arrays.toString(parents));
 		
-		//1ÀÌ ¼ÓÇÑ ÁıÇÕÀÇ ´ëÇ¥ÀÚ¸¦ 0ÀÌ ¼ÓÇÑ ÁıÇÕÀÇ ´ëÇ¥ÀÚ·Î º¯°æ.
+		//1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½Ú¸ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½Ú·ï¿½ ï¿½ï¿½ï¿½ï¿½.
 		union(0, 1);
 		//0 0 2 3 4 5
 		System.out.println(Arrays.toString(parents));
@@ -47,9 +47,9 @@ public class »óÈ£¹èÅ¸ÁıÇÕ_rank {
 		}
 	}
 	static void union(int x, int y) {
-		//findSetÀº ÇØ´ç ¿ø¼Ò°¡ ¼ÓÇÑ ÁıÇÕÀÇ ´ëÇ¥ÀÚ¸¦ Ã£¾ÆÁİ´Ï´Ù.
-		int px = findSet(x); //x°¡ ¼ÓÇÑ ÁıÇÕÀÇ ´ëÇ¥ÀÚ.
-		int py = findSet(y); //y°¡ ¼ÓÇÑ ÁıÇÕÀÇ ´ëÇ¥ÀÚ.
+		//findSetï¿½ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½Ú¸ï¿½ Ã£ï¿½ï¿½ï¿½İ´Ï´ï¿½.
+		int px = findSet(x); //xï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½.
+		int py = findSet(y); //yï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½.
 		
 		
 //		parents[py] = px;

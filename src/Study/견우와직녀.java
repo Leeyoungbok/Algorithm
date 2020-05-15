@@ -3,7 +3,7 @@ package Study;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class °ß¿ì¿ÍÁ÷³à {
+public class ê²¬ìš°ì™€ì§ë…€ {
 
 	static class Meet implements Comparable<Meet> {
 		int x, y, cnt, jump;

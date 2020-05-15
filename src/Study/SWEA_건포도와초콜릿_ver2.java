@@ -3,7 +3,7 @@ package Study;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SWEA_°ÇÆ÷µµ¿ÍÃÊÄİ¸´_ver2 {
+public class SWEA_ê±´í¬ë„ì™€ì´ˆì½œë¦¿_ver2 {
 	static int result;
 	static int n, m;
 	static int[][] map;
@@ -50,7 +50,7 @@ public class SWEA_°ÇÆ÷µµ¿ÍÃÊÄİ¸´_ver2 {
 				sum += map[i][j];
 			}
 		}
-		// °¡·Îºñ¿ë ÃÖ¼Ú°ª
+		// ï¿½ï¿½ï¿½Îºï¿½ï¿½ ï¿½Ö¼Ú°ï¿½
 		for(int i = 1 ; i < h ; i++) {
 			if(dp[y][x][i][w] == Integer.MAX_VALUE) {
 				dp[y][x][i][w] = dfs(y,x,i,w);
@@ -61,7 +61,7 @@ public class SWEA_°ÇÆ÷µµ¿ÍÃÊÄİ¸´_ver2 {
 			int sum3 = sum + dp[y][x][h][w] + dp[y+i][x][h-i][w];
 			dp[y][x][h][w] = Math.min(dp[y][x][h][w], sum3);
 		}
-		// ¼¼·Îºñ¿ë ÃÖ¼Ú°ª
+		// ï¿½ï¿½ï¿½Îºï¿½ï¿½ ï¿½Ö¼Ú°ï¿½
 		for(int i = 1 ; i < w ; i++) {
 			if(dp[y][x][h][w] == Integer.MAX_VALUE) {
 				dp[y][x][h][w] = dfs(y,x,h,i);

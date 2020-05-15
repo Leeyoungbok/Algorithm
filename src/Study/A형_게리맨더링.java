@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class AÇü_°Ô¸®¸Ç´õ¸µ {
+public class Aí˜•_ê²Œë¦¬ë§¨ë”ë§ {
 	static int N, cnt, ans = Integer.MAX_VALUE;
 	static int[] arr;
 	static boolean[] res;
@@ -40,7 +40,7 @@ public class AÇü_°Ô¸®¸Ç´õ¸µ {
 
 	}
 	
-	static void solve(int idx) { // °æ¿ìÀÇ ¼ö - ¹Ý¸¸ »Ì¾Æ³¿
+	static void solve(int idx) { // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ - ï¿½Ý¸ï¿½ ï¿½Ì¾Æ³ï¿½
 		if(idx > N) {
 			cnt++;
 			if(cnt > Math.pow(2, N)/2)

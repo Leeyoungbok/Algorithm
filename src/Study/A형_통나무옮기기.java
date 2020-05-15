@@ -9,7 +9,7 @@ import java.util.LinkedList;
 class treeMove{
 	int x;
 	int y;
-	int cur; // 0ÀÌ¸é °¡·Î 1ÀÌ¸é ¼¼·Î
+	int cur; // 0ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ 1ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 	int cnt;
 	treeMove(int x, int y, int cur, int cnt){
 		this.x = x;
@@ -19,7 +19,7 @@ class treeMove{
 	}
 }
 
-public class AÇü_Åë³ª¹«¿Å±â±â {
+public class Aí˜•_í†µë‚˜ë¬´ì˜®ê¸°ê¸° {
 	static int N, ECnt, ECur, EX, EY;
 	static int[][] map;
 	static boolean[][][] used;
@@ -32,7 +32,7 @@ public class AÇü_Åë³ª¹«¿Å±â±â {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		N = Integer.parseInt(br.readLine());
 		map = new int[N+1][N+1];
-		used = new boolean[N+1][N+1][2]; // 0ÀÎ°æ¿ì  : °¡·Î Ã¼Å©  , 1ÀÎ°æ¿ì : ¼¼·Î Ã¼Å©
+		used = new boolean[N+1][N+1][2]; // 0ï¿½Î°ï¿½ï¿½  : ï¿½ï¿½ï¿½ï¿½ Ã¼Å©  , 1ï¿½Î°ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ Ã¼Å©
 		int BCnt = 0;
 		int BCur = 0;
 		for(int i = 1 ; i <= N ; i++) {
@@ -74,7 +74,7 @@ public class AÇü_Åë³ª¹«¿Å±â±â {
 			int size = queue.size();
 			for(int s = 0 ; s < size ; s++) {
 				treeMove tree = queue.poll();
-				for(int k = 0 ; k < 4 ; k++) { // turnÇÏÁö ¾Ê°í ±×³É ÀÌµ¿ÇÏ´Â °æ¿ì
+				for(int k = 0 ; k < 4 ; k++) { // turnï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½×³ï¿½ ï¿½Ìµï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½
 					int ax = tree.x + dx[k];
 					int ay = tree.y + dy[k];
 					if(!isPossibleGo(ax, ay, k, tree.cur) || used[ax][ay][tree.cur]) continue;
@@ -93,7 +93,7 @@ public class AÇü_Åë³ª¹«¿Å±â±â {
 					queue.add(new treeMove(ax, ay, tree.cur, tree.cnt+1));
 				}
 				
-				if(isPossibleTurn(tree.x, tree.y, tree.cur)) { // turn ÇÏ°í ÁøÇàÇÒ ¼ö ÀÖ´ÂÁö °Ë»çÇÏ°í turn ÇÑ´ÙÀ½ ÁøÇà
+				if(isPossibleTurn(tree.x, tree.y, tree.cur)) { // turn ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½ï¿½ï¿½ ï¿½Ë»ï¿½ï¿½Ï°ï¿½ turn ï¿½Ñ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					int changeCur = 0;
 					if(tree.cur == 0)
 						changeCur = 1;

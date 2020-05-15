@@ -3,7 +3,7 @@ package Study;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AÇü_¾ß±¸ {
+public class Aí˜•_ì•¼êµ¬ {
 	static int[][] hit;
 	static int[] person = new int[10];
 	static int N;
@@ -37,21 +37,21 @@ public class AÇü_¾ß±¸ {
 				list.add(sortPerson[i]);
 			}
 			int score = 0;		        
-			 int batting_order = 0; // Å¸¼ø
+			 int batting_order = 0; // Å¸ï¿½ï¿½
 			for (int i = 1; i <= N; i++) {
 //				 int out_cnt = 0;
 //		         boolean[] base = new boolean[4];
 //				 while (true) {
-//		                // Å¸ÀÚÀÇ Á¤º¸ ÇÑ°³¸¦ °¡Áö°í ¿Â´Ù
+//		                // Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â´ï¿½
 //		                int infor = hit[i][list.get(batting_order)];
 //		                
-//		                // Å¸¼øÀ» ¹Ù²ãÁØ´Ù
+//		                // Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½Ù²ï¿½ï¿½Ø´ï¿½
 //		                if (batting_order == 8) {
 //		                    batting_order = 0;
 //		                } else
 //		                    batting_order++;
 //		                
-//		                // Å¸ÀÚÀÇ Á¤º¸¸¶´Ù ´Ù¸¥ ½ÇÇàÀ» ÇÑ´Ù.
+//		                // Å¸ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
 //		                if (infor == 0) {
 //		                    out_cnt++;
 //		                    if (out_cnt >= 3) {

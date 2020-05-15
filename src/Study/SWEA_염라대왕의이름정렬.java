@@ -23,7 +23,7 @@ class NameSort implements Comparable<NameSort>{
 		return 1;
 	}
 }
-public class SWEA_¿°¶ó´ë¿ÕÀÇÀÌ¸§Á¤·Ä {
+public class SWEA_ì—¼ë¼ëŒ€ì™•ì˜ì´ë¦„ì •ë ¬ {
 	static int N;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

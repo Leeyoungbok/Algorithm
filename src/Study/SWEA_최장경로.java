@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class SWEA_ÃÖÀå°æ·Î {
+public class SWEA_ìµœì¥ê²½ë¡œ {
 	static int N, M, ans;
 	static int[] node;
 	static boolean[] used;

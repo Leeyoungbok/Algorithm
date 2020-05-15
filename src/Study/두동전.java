@@ -18,7 +18,7 @@ class coin {
 	}
 }
 
-public class µÎµ¿Àü {
+public class ë‘ë™ì „ {
 	static int N, M;
 	static char[][] map;
 	static boolean[][][][] used;
@@ -108,13 +108,13 @@ public class µÎµ¿Àü {
 					}else
 						check02 = true;
 					
-					if(check01 && check02) // µÑ´Ù ¶³¾îÁö´Â °æ¿ì
+					if(check01 && check02) // ï¿½Ñ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						continue;
 					
-					if(check03 && check04) // µÑ´Ù ¸·È÷´Â °æ¿ì
+					if(check03 && check04) // ï¿½Ñ´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						continue;
 					
-					if((check01 && !check02) || (!check01 && check02)) { // µÑÁßÇÏ³ª¸¸ ¶³¾îÁø °æ¿ì
+					if((check01 && !check02) || (!check01 && check02)) { // ï¿½ï¿½ï¿½ï¿½ï¿½Ï³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 						System.out.println(cnt);
 						return;
 					}

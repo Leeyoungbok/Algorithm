@@ -21,7 +21,7 @@ class island implements Comparable<island> {
 
 }
 
-public class AÇü_´Ù¸®¸¸µé±â2 {
+public class Aí˜•_ë‹¤ë¦¬ë§Œë“¤ê¸°2 {
 	static int N, M, ans;
 	static int[] disjoint;
 	static int[][] map, cntMap;

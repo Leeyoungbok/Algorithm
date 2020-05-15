@@ -19,7 +19,7 @@ class snow {
 	}
 }
 
-public class ºù»ê {
+public class ë¹™ì‚° {
 	static int N, M, ans = 0;
 	static int[][] map;
 	static boolean[][] used;
@@ -107,4 +107,4 @@ public class ºù»ê {
 	}
 
 }
-//bfs ¾Èµ¹¸®¸é ¹Ý·Ê°¡ ÀÖ¾î¿È
+//bfs ï¿½Èµï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý·Ê°ï¿½ ï¿½Ö¾ï¿½ï¿½

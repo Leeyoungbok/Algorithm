@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_°æ»ç·Î {
+public class Aí˜•_ê²½ì‚¬ë¡œ {
 	static int N, L, ans;
 	static int[][] map;
 
@@ -42,7 +42,7 @@ public class AÇü_°æ»ç·Î {
 						toLowCheck = false;
 						cnt = 0;
 					}
-				} else if (map[i][j] < height) { // ³ôÀº°÷¿¡¼­ ³·Àº°÷À¸·Î °¡´Â °æ¿ì
+				} else if (map[i][j] < height) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 					if (toLowCheck) {
 						retCheck = true;
 						break;
@@ -54,7 +54,7 @@ public class AÇü_°æ»ç·Î {
 						cnt = 0;
 					}
 					height = map[i][j];
-				} else if (map[i][j] > height) { // ³·Àº°÷¿¡¼­ ³ôÀº°÷À¸·Î °¡´Â °æ¿ì
+				} else if (map[i][j] > height) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 					if (toLowCheck) {
 						retCheck = true;
 						break;
@@ -69,7 +69,7 @@ public class AÇü_°æ»ç·Î {
 				}
 			}
 			if (!retCheck && !toLowCheck) {
-//				System.out.println(i+"Çà");
+//				System.out.println(i+"ï¿½ï¿½");
 				ans++;
 			}
 		}
@@ -92,7 +92,7 @@ public class AÇü_°æ»ç·Î {
 						toLowCheck = false;
 						cnt = 0;
 					}
-				} else if (map[i][j] < height) { // ³ôÀº°÷¿¡¼­ ³·Àº°÷À¸·Î °¡´Â °æ¿ì
+				} else if (map[i][j] < height) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 					
 					if (toLowCheck) {
 						retCheck = true;
@@ -105,7 +105,7 @@ public class AÇü_°æ»ç·Î {
 						cnt = 0;
 					}
 					height = map[i][j];
-				} else if (map[i][j] > height) { // ³·Àº°÷¿¡¼­ ³ôÀº°÷À¸·Î °¡´Â °æ¿ì
+				} else if (map[i][j] > height) { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 					if (toLowCheck) {
 						retCheck = true;
 						break;
@@ -120,7 +120,7 @@ public class AÇü_°æ»ç·Î {
 				}
 			}
 			if (!retCheck && !toLowCheck) {
-//				System.out.println(j+"¿­");
+//				System.out.println(j+"ï¿½ï¿½");
 				ans++;
 			}
 		}

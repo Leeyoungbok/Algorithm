@@ -11,7 +11,7 @@ class fish{
 		this.y = y;
 	}
 }
-public class °í±âÀâÀÌ {
+public class ê³ ê¸°ì¡ì´ {
 	static int N, I, M, ans;
 	static int[][] map;
 	public static void main(String[] args) {

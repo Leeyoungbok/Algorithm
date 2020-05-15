@@ -18,7 +18,7 @@ class wall{
 	}
 }
 
-public class º®ºÎ¼ö°íÀÌµ¿ÇÏ±â2 {
+public class ë²½ë¶€ìˆ˜ê³ ì´ë™í•˜ê¸°2 {
 	static int N, M, K, ans=1;
 	static int[][] map;
 	static boolean[][][] used;

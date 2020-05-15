@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class ½ºÆ¼Ä¿ºÙÀÌ±â {
+public class ìŠ¤í‹°ì»¤ë¶™ì´ê¸° {
 	static int N, M, K, R, C;
 	static int[] rMemo;
 	static int[] cMemo;
@@ -15,8 +15,8 @@ public class ½ºÆ¼Ä¿ºÙÀÌ±â {
 		K = sc.nextInt();
 		
 		sticker = new int[K][][];
-		rMemo = new int[K]; // r Å©±â ±â·Ï
-		cMemo = new int[K]; // c Å©±â ±â·Ï
+		rMemo = new int[K]; // r Å©ï¿½ï¿½ ï¿½ï¿½ï¿½
+		cMemo = new int[K]; // c Å©ï¿½ï¿½ ï¿½ï¿½ï¿½
 		for(int k = 0 ; k < K ; k++) {
 			R = sc.nextInt();
 			C = sc.nextInt();

@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class SWEA_Ãß¾ïÀÇ2048°ÔÀÓ {
+public class SWEA_ì¶”ì–µì˜2048ê²Œì„ {
 	static int N;
 
 	public static void main(String[] args) {
@@ -71,7 +71,7 @@ public class SWEA_Ãß¾ïÀÇ2048°ÔÀÓ {
 
 	static int[][] cal(int[][] map) {
 		for (int j = 1; j <= N; j++) {
-			// 1. °°Àº°Å ¿¬»êÇØÁÜ.
+			// 1. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 			for (int i = 1; i < N; i++) {
 				if (map[i][j] == 0)
 					continue;
@@ -85,7 +85,7 @@ public class SWEA_Ãß¾ïÀÇ2048°ÔÀÓ {
 					}
 				}
 			}
-			// 2. ÀÌÁ¦ ´Ù ¿Ã·ÁÁà¾ßÇÔ.
+			// 2. ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 			int idx = 0;
 			boolean check = false;
 			for (int i = 1; i <= N; i++) {

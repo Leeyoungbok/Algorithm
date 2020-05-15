@@ -28,7 +28,7 @@ class Sepo implements Comparable<Sepo>{
 	}
 }
 
-public class SWEA_ÁÙ±â¼¼Æ÷¹è¾ç {
+public class SWEA_ì¤„ê¸°ì„¸í¬ë°°ì–‘ {
 	static int N, M, K;
 	static int[][] map;
 	static int[] dx = {-1,0,1,0};

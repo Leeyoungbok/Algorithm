@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class SWEA_ÇÜ½ºÅÍ {
+public class SWEA_í–„ìŠ¤í„° {
 	static int N, X, M, sum;
 	static int[][] memo;
 	static int[] res;

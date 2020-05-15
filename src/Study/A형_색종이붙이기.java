@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_»öÁ¾ÀÌºÙÀÌ±â {
+public class Aí˜•_ìƒ‰ì¢…ì´ë¶™ì´ê¸° {
 	static int ret = 26;
 	static int nmg = 0;
 	static int[] paper = { 0, 5, 5, 5, 5, 5 };

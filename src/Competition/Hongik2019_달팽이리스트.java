@@ -2,7 +2,7 @@ package Competition;
 
 import java.util.Scanner;
 
-public class Hongik2019_´ŞÆØÀÌ¸®½ºÆ® {
+public class Hongik2019_ë‹¬íŒ½ì´ë¦¬ìŠ¤íŠ¸{
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		

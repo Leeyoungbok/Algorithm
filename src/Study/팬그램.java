@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class �ұ׷� {
+public class 팬그램 {
 	static int N;
 	static int[] alphabet;
 

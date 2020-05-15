@@ -15,7 +15,7 @@ class SafeQueen {
 	}
 }
 
-public class °øÁÖ´ÔÀ»±¸ÇØ¶ó {
+public class ê³µì£¼ë‹˜ì„êµ¬í•´ë¼ {
 	static int N, M, T, cnt;
 	static int[][] map;
 	static boolean[][][] used;

@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Programmers_°ÔÀÓ¸ÊÃÖ´Ü°Å¸® {
+public class Programmers_ê²Œì„ë§µìµœë‹¨ê±°ë¦¬ {
 	static int[][] map;
 	static boolean[][] used;
 	static int[] dx = {-1,0,1,0};

@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Å»Ãâ {
+public class íƒˆì¶œ {
 	static int N, T, G;
 	static boolean[] used;
 
@@ -27,20 +27,20 @@ public class Å»Ãâ {
 			int size = queue.size();
 			for (int s = 0; s < size; s++) {
 				int n1 = queue.poll();
-				if (n1 == G) { // queue ¿¡¼­ ³ª¿Â ¼ö°¡ G¿Í °°À¸¸é ³¡
+				if (n1 == G) { // queue ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Gï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 					System.out.println(cnt);
 					sc.close();
 					return;
 				}
-				if (n1 + 1 <= 99999 && !used[n1 + 1]) { // max °ª ¾È³Ñ¾î°¡°í »ç¿ëÇÏÁö ¾Ê¾ÒÀ¸¸é ³ÖÀ½
+				if (n1 + 1 <= 99999 && !used[n1 + 1]) { // max ï¿½ï¿½ ï¿½È³Ñ¾î°¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					queue.add(n1 + 1);
 					used[n1 + 1] = true;
 				}
 
-				if (n1 != 0 && 2 * n1 > 99999) // 0 ÀÏ°æ¿ì , 2¹è ÇßÀ»¶§ max °ª ³Ñ¾î°¡¸é +1 ¿¬»ê¸¸ ½ÇÇà
+				if (n1 != 0 && 2 * n1 > 99999) // 0 ï¿½Ï°ï¿½ï¿½ , 2ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ max ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ +1 ï¿½ï¿½ï¿½ê¸¸ ï¿½ï¿½ï¿½ï¿½
 					continue;
 
-				int n2 = 2 * n1; // 2*n , ¸Ç ¾ÕÀÚ¸® -1 ÇÏ´Â ¿¬»ê
+				int n2 = 2 * n1; // 2*n , ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¸ï¿½ -1 ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½
 				int mul = 1;
 				while (n2 >= 10) {
 					n2 /= 10;
@@ -48,7 +48,7 @@ public class Å»Ãâ {
 				}
 //				System.out.println((2*n1)%mul + " " + (n2-1)*mul);
 				int n3 = (2 * n1) % mul + (n2 - 1) * mul;
-				if (n3 >= 0 && n3 <= 99999 && !used[n3]) { // 0º¸´Ù Å©°í 
+				if (n3 >= 0 && n3 <= 99999 && !used[n3]) { // 0ï¿½ï¿½ï¿½ï¿½ Å©ï¿½ï¿½ 
 					queue.add(n3);
 					used[n3] = true;
 				}

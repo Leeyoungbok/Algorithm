@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Set;
 
-public class A¿¡¼­B {
+public class Aì—ì„œB {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

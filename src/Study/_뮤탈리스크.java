@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class __¹ÂÅ»¸®½ºÅ© {
+public class _ë®¤íƒˆë¦¬ìŠ¤í¬{
 
 	static int N, ans = 61;
 	static int[] arr;

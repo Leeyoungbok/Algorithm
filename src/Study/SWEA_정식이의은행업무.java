@@ -2,7 +2,7 @@ package Study;
 
 import java.util.*;
 
-public class SWEA_Á¤½ÄÀÌÀÇÀºÇà¾÷¹« {
+public class SWEA_ì •ì‹ì´ì˜ì€í–‰ì—…ë¬´ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

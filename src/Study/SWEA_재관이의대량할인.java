@@ -3,7 +3,7 @@ package Study;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class SWEA_Àç°üÀÌÀÇ´ë·®ÇÒÀÎ {
+public class SWEA_ì¬ê´€ì´ì˜ëŒ€ëŸ‰í• ì¸ {
 	static class A implements Comparable<A>{
 		int a;
 		A(int a){

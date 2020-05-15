@@ -2,7 +2,7 @@ package DisjointSet;
 
 import java.util.Scanner;
 
-public class Á¾±³ {
+public class ì¢…êµ {
 	static int[] religion;
 	static int cnt;
 	static int N;
@@ -33,8 +33,8 @@ public class Á¾±³ {
 			return n1;
 		}
 		
-		int p = find(religion[n1]); // ¸¶Âù°¡Áö·Î ´ëÇ¥¸¦ Ã£Áö¸¸,
-		religion[n1]=p; // ÇÑ¹ø p¿¡ ÀúÀåÇØ³õ°í ´Ù½Ã ±× Àç±Í¸¦ ´Ù ´Ù½Ã º¸³»Áö ¾Êµµ·Ï.
+		int p = find(religion[n1]); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥ï¿½ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½,
+		religion[n1]=p; // ï¿½Ñ¹ï¿½ pï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Êµï¿½ï¿½ï¿½.
 		return p;
 	}
 	

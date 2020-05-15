@@ -25,7 +25,7 @@ class Tree implements Comparable<Tree> {
 	}
 }
 
-public class AгЭ_Ё╙╧╚юГеве╘ {
+public class AМ≤∙_К┌≤К╛╢Л·╛М┘▄М│╛ {
 
 	static int N, M, K;
 	static int[][] map;
@@ -79,7 +79,7 @@ public class AгЭ_Ё╙╧╚юГеве╘ {
 	static void spring() {
 		while( ! list.isEmpty() ) {
 			Tree tree = list.poll();
-			//Ё╙╧╚юг ю╖д║©║ ╬Г╨пюл цФ╨пго╢ы╦И Ё╙╧╚юг Ё╙юл╦╦е╜ ╬Г╨пю╩ ╬Ь╬ж╟М Ё╙юлгя╩Л╢ц╦╝╟М alive е╔╥н ╩Пют
+			//О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫д║О©╫О©╫ О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫О©╫о╢ы╦О©╫ О©╫О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫л╦О©╫е╜ О©╫О©╫О©╫О©╫О©╫ О©╫О©╫О©╫ж╟О©╫ О©╫О©╫О©╫О©╫О©╫я╩О©╫ц╦О©╫О©╫О©╫ alive е╔О©╫О©╫ О©╫О©╫О©╫О©╫
 			if( tree.z <= map[tree.x][tree.y] ) {
 				map[tree.x][tree.y] -= tree.z;
 				tree.z++;

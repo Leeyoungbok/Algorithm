@@ -27,7 +27,7 @@ class Naming implements Comparable<Naming>{
 	
 	
 }
-public class SWEA_Á¾±¸ÀÇµşÀÌ¸§Áş±â {
+public class SWEA_ì¢…êµ¬ì˜ë”¸ì´ë¦„ì§“ê¸° {
 	static int N, M;
 	static char[][] map;
 	static boolean[][] used;

@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_ÆÄÀÌÇÁ¿Å±â±â1 {
+public class Aí˜•_íŒŒì´í”„ì˜®ê¸°ê¸°1 {
 	static int[] dx = { 0, 0, 1, 1 };
 	static int[] dy = { 0, 1, 1, 0 };
 	static int[][] myRoom;

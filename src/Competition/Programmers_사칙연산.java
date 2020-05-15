@@ -2,7 +2,7 @@ package Competition;
 
 import java.util.Scanner;
 
-public class Programmers_»çÄ¢¿¬»ê {
+public class Programmers_ì‚¬ì¹™ì—°ì‚° {
 
 	public static void main(String[] args) {
 //		Scanner sc = new Scanner(System.in);

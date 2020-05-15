@@ -13,7 +13,7 @@ class virus{
 		this.y = y;
 	}
 }
-public class AÇü_¿¬±¸¼Ò3 {
+public class Aí˜•_ì—°êµ¬ì†Œ3 {
 	static int N, M, ans=Integer.MAX_VALUE;
 	static int[][] map;
 	static int[][] copyMap;
@@ -21,7 +21,7 @@ public class AÇü_¿¬±¸¼Ò3 {
 	static ArrayList<virus> list = new ArrayList<>();
 	static int[] dx = {-1,1,0,0};
 	static int[] dy = {0,0,-1,1};
-	public static void main(String[] args) { // ¸¸¾à¿¡ ±× ÀÚ¸®°¡ ºñÈ°¼º ¹ÙÀÌ·¯½º¸é -3,
+	public static void main(String[] args) { // ï¿½ï¿½ï¿½à¿¡ ï¿½ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½ ï¿½ï¿½ï¿½Ì·ï¿½ï¿½ï¿½ï¿½ï¿½ -3,
 		Scanner sc = new Scanner(System.in);
 		
 		N = sc.nextInt();

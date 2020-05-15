@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class ġŲ��� {
+public class 치킨배달 {
 	static int N, M, ans = Integer.MAX_VALUE;
 	static int[][] map;
 	static ArrayList<Chicken> list = new ArrayList<>();

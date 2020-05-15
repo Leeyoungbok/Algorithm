@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class SWEA_µî»ê·ÎÁ¶¼º_BFS_¹Ì¿Ï {
+public class SWEA_ë“±ì‚°ë¡œì¡°ì„±_BFS_ë¯¸ì™„ {
 	static int N, K, Ans;
 	static int[] dx = {-1,0,1,0};
 	static int[] dy = {0,1,0,-1};

@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class SWEA_Á¶ÇÕ {
+public class SWEA_ì¡°í•© {
 	final static long MOD = 1234567891;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

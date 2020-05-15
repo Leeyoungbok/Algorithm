@@ -14,7 +14,7 @@ class nation {
 	}
 }
 
-public class AÇü_ÀÎ±¸ÀÌµ¿ {
+public class Aí˜•_ì¸êµ¬ì´ë™ {
 	static int N, L, R;
 	static int[][] map;
 	static boolean[][] used;

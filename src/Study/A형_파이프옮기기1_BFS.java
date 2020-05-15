@@ -16,7 +16,7 @@ class move {
 	}
 }
 
-public class AÇü_ÆÄÀÌÇÁ¿Å±â±â1_BFS {
+public class Aí˜•_íŒŒì´í”„ì˜®ê¸°ê¸°1_BFS {
 	static int[] dx = { 0, 0, 1, 1 };
 	static int[] dy = { 0, 1, 1, 0 };
 	static int[][] myRoom;
@@ -33,7 +33,7 @@ public class AÇü_ÆÄÀÌÇÁ¿Å±â±â1_BFS {
 				myRoom[i][j] = sc.nextInt();
 			}
 		}
-		// 1 -> ¤Ñ
+		// 1 -> ï¿½ï¿½
 		// 2 -> \
 		// 3 -> |
 		queue.add(new move(1, 2, 1));

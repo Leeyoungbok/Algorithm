@@ -17,7 +17,7 @@ class cctvInfo {
 	}
 }
 
-public class AÇü_°¨½Ã {
+public class Aí˜•_ê°ì‹œ {
 	static int N, M, ans;
 	static int[][] map, copyMap;
 	static ArrayList<cctvInfo> list = new ArrayList<>();

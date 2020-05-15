@@ -29,7 +29,7 @@ class shark implements Comparable<shark> {
 	}
 }
 
-public class AÇü_¾Æ±â»ó¾î {
+public class Aí˜•_ì•„ê¸°ìƒì–´ {
 	static int N, ans, sharkSize;
 	static int[] fish = new int[5000];
 	static int[][] map;
@@ -88,7 +88,7 @@ public class AÇü_¾Æ±â»ó¾î {
 				Collections.sort(list);
 				shark sh = list.remove(0);
 				fish[map[sh.x][sh.y]]--;
-				map[sh.x][sh.y] = 0; // ¹°°í±â°¡ ÀÖ´ø ÀÚ¸®¸¦ Áö¿öÁÜ
+				map[sh.x][sh.y] = 0; // ï¿½ï¿½ï¿½ï¿½â°¡ ï¿½Ö´ï¿½ ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				sharkEatCnt++;
 				ans += cnt;
 				cnt = 0;

@@ -14,7 +14,7 @@ class stone {
 	}
 }
 
-public class SWEA_º®µ¹±ú±â {
+public class SWEA_ë²½ëŒê¹¨ê¸° {
 	static int K, N, M, ans,a,b,c;
 	static int[] res;
 	static int[][] map, copyMap;

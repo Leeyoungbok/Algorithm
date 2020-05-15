@@ -3,7 +3,7 @@ package Study;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class __¼­¿ïÁöÇÏÃ¶2È£¼± {
+public class __ì„œìš¸ì§€í•˜ì² 2í˜¸ì„  {
 	static int N;
 	static boolean[] used;
 	static boolean[] cycle;

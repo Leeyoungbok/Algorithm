@@ -15,7 +15,7 @@ class Fire {
 	}
 }
 
-public class ºÒ {
+public class ë¶ˆ {
 	static int N, M;
 	static int[][] map;
 	static boolean[][] used;

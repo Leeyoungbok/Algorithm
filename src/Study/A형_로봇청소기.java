@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class AÇü_·Îº¿Ã»¼Ò±â {
-	// dir = 0 - ºÏ / 1 - µ¿ / 2 - ³² / 3 - ¼­
+public class Aí˜•_ë¡œë´‡ì²­ì†Œê¸° {
+	// dir = 0 - ï¿½ï¿½ / 1 - ï¿½ï¿½ / 2 - ï¿½ï¿½ / 3 - ï¿½ï¿½
 	static int[] dx = { -1, 0, 1, 0 };
 	static int[] dy = { 0, 1, 0, -1 };
 	static int[][] map;
@@ -40,7 +40,7 @@ public class AÇü_·Îº¿Ã»¼Ò±â {
 		int cnt = 0;
 		loop: while(true) {
 			cnt = 0;
-			if(!check[x][y]) {    // 1¹ø Á¶°Ç
+			if(!check[x][y]) {    // 1ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				check[x][y] = true;
 				ans++;
 			}

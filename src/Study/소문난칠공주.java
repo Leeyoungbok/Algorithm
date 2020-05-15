@@ -15,7 +15,7 @@ class member {
 	}
 }
 
-public class ¼Ò¹®³­Ä¥°øÁÖ {
+public class ì†Œë¬¸ë‚œì¹ ê³µì£¼ {
 	static int N = 5;
 	static char[][] map = new char[N + 1][N + 1];
 	static boolean[][] used = new boolean[N + 1][N + 1];

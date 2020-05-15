@@ -4,7 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class AÇü_±¸½½Å»Ãâ2 {
+public class Aí˜•_êµ¬ìŠ¬íƒˆì¶œ2 {
 	static int N, M;
 	static char[][] map;
 	static boolean[][][][] used;

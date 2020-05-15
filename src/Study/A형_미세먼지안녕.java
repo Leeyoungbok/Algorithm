@@ -15,7 +15,7 @@ class air {
 	}
 }
 
-public class AÇü_¹Ì¼¼¸ÕÁö¾È³ç {
+public class Aí˜•_ë¯¸ì„¸ë¨¼ì§€ì•ˆë…• {
 	static int N, M, T;
 	static int[][] map, machine;
 	static int[] dx = { -1, 1, 0, 0 };
@@ -67,7 +67,7 @@ public class AÇü_¹Ì¼¼¸ÕÁö¾È³ç {
 		sc.close();
 	}
 
-	// ¸ÕÁö È®»ê
+	// ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½
 
 	static void situation01() {
 		while (!list.isEmpty()) {
@@ -88,9 +88,9 @@ public class AÇü_¹Ì¼¼¸ÕÁö¾È³ç {
 		}
 	}
 
-	// Ã»¼Ò±â
+	// Ã»ï¿½Ò±ï¿½
 	static void situation02() {
-		// À­ÂÊ Ã»¼Ò±â
+		// ï¿½ï¿½ï¿½ï¿½ Ã»ï¿½Ò±ï¿½
 		for (int i = machine[0][0] - 1; i > 1; i--) {
 			map[i][1] = map[i - 1][1];
 		}
@@ -104,7 +104,7 @@ public class AÇü_¹Ì¼¼¸ÕÁö¾È³ç {
 			map[machine[0][0]][j] = map[machine[0][0]][j - 1];
 		}
 		
-		// ¾Æ·§ÂÊ Ã»¼Ò±â
+		// ï¿½Æ·ï¿½ï¿½ï¿½ Ã»ï¿½Ò±ï¿½
 		for (int i = machine[1][0]+1 ; i < N; i++) {
 			map[i][1] = map[i + 1][1];
 		}

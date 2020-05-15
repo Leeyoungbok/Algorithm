@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_ÁÖ»çÀ§±¼¸®±â {
+public class Aí˜•_ì£¼ì‚¬ìœ„êµ´ë¦¬ê¸° {
 	static int N, M, X, Y;
 	static int[][] map;
 	static int[] cube = new int[7];

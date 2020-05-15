@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
 
-public class SWEA_º¸¹°»óÀÚºñ¹Ğ¹øÈ£ {
+public class SWEA_ë³´ë¬¼ìƒìë¹„ë°€ë²ˆí˜¸ {
 	static int N, K, cnt;
 	static String str;
 

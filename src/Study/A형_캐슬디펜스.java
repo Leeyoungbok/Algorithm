@@ -18,13 +18,13 @@ class enermy implements Comparable<enermy>{
 		return this.y - o.y;
 	}
 }
-public class AÇü_Ä³½½µğÆæ½º {
+public class Aí˜•_ìºìŠ¬ë””íœìŠ¤ {
 	static int N, M, D, ans;
 	static int[][] map;
 	static int[][] copyMap;
 	static int res[];
 	static int[] dx = {-1,0,0,1};
-	static int[] dy = {0,-1,1,0}; // »ó ÁÂ ¿ì ÇÏ
+	static int[] dy = {0,-1,1,0}; // ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
 	static boolean[][] used;
 	static Deque<enermy> queue = new LinkedList<>();
 	
@@ -35,7 +35,7 @@ public class AÇü_Ä³½½µğÆæ½º {
 		M = sc.nextInt();
 		D = sc.nextInt();
 		
-		map = new int[N+2][M+1]; // ¸Ç À­Ä­¿¡´Â 0 ³»·Á¿È
+		map = new int[N+2][M+1]; // ï¿½ï¿½ ï¿½ï¿½Ä­ï¿½ï¿½ï¿½ï¿½ 0 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		copyMap = new int[N+2][M+1];
 		res = new int[M];
 		for(int i = 1 ; i <= N ; i++) {
@@ -83,7 +83,7 @@ public class AÇü_Ä³½½µğÆæ½º {
 				int cnt = 0;
 				list = new ArrayList<>();
 				used = new boolean[N+1][M+1];
-				queue.add(new enermy(N+1,i+1)); // 0ºÎÅÍ ½ÃÀÛÀÌ´Ï +1ÇØ¼­ Áı¾î³ÖÀ½
+				queue.add(new enermy(N+1,i+1)); // 0ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ +1ï¿½Ø¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				loop : while(!queue.isEmpty()) {
 					int size = queue.size();
 					cnt++;

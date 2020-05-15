@@ -22,7 +22,7 @@ class sharkInfo {
 	}
 }
 
-public class AÇü_³¬½Ã¿Õ {
+public class Aí˜•_ë‚šì‹œì™• {
 	static int N, M, sharkCnt, fishingKing = 0;
 	static int[][] map;
 	static sharkInfo[] list;
@@ -58,9 +58,9 @@ public class AÇü_³¬½Ã¿Õ {
 	}
 
 	static void fishing() {
-		fishingKing++; // ¿À¸¥ÂÊÀ¸·Î ¿Å°ÜÁÜ
+		fishingKing++; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Å°ï¿½ï¿½ï¿½
 		for (int i = 1; i <= N; i++) {
-			if (map[i][fishingKing] != 0) { // 0ÀÎ°Å¸é list¿Í map¿¡¼­ Áö¿öÁÜ
+			if (map[i][fishingKing] != 0) { // 0ï¿½Î°Å¸ï¿½ listï¿½ï¿½ mapï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				ans += list[map[i][fishingKing]].z;
 				list[map[i][fishingKing]].alive = false;
 				map[i][fishingKing] = 0;

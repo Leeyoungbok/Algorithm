@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_¹è¿­µ¹¸®±â4 {
+public class Aí˜•_ë°°ì—´ëŒë¦¬ê¸°4 {
 	static int N, M, K, ans = Integer.MAX_VALUE;
 	static int[] r, c, s, res;
 	static boolean[] workOrder;

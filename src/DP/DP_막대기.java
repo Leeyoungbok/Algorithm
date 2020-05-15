@@ -1,6 +1,6 @@
 package DP;
 
-public class DP_¸·´ë±â {
+public class DP_ë§‰ëŒ€ê¸°{
 
 	public static void main(String[] args) {
 		int[] dp = new int[100];

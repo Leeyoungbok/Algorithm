@@ -3,9 +3,7 @@ package Study;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-// 1. 최소로 도착할 수 있는 경우가 몇번인지 구한다.
-// 2. 
-public class 발레리노 {
+public class 諛쒕젅由щ끂 {
 	
 	static class Jump implements Comparable<Jump>{
 		int x, y, cnt;

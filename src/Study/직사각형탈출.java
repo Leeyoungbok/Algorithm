@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Á÷»ç°¢ÇüÅ»Ãâ {
+public class ì§ì‚¬ê°í˜•íƒˆì¶œ {
 	static int N, M, H, W, Sr, Sc, Fr, Fc;
 	static int[][] map;
 	static boolean[][] used;

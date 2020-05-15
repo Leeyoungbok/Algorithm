@@ -1,12 +1,12 @@
 package Study;
-//¼÷Á¦. arraylist·Î ±¸Çö
+//ï¿½ï¿½ï¿½ï¿½. arraylistï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class DFS¿ÍBFS {
+public class DFSì™€BFS {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

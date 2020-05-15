@@ -2,7 +2,7 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_Åé´Ï¹ÙÄû {
+public class Aí˜•_í†±ë‹ˆë°”í€´ {
 	static int[][] gear = new int[4][8];
 
 	public static void main(String[] args) {

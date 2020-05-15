@@ -3,7 +3,7 @@ package Study;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Æò¹üÇÑ¹è³¶ {
+public class í‰ë²”í•œë°°ë‚­ {
 	static int N, M, ans = 0;
 	static int[] arr, weight, value;
 	static boolean[] used;

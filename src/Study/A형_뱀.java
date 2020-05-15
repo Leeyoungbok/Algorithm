@@ -2,12 +2,12 @@ package Study;
 
 import java.util.Scanner;
 
-public class AÇü_¹ì {
+public class Aí˜•_ë±€ {
 	static int N, headIdx, tailIdx, head_Dir;
 	static int appleCnt, orderCnt,cnt;
 	static int[][] snake = new int[10001][2];
 	static int[][] map;
-	static int[] dx = { 0, 1, 0, -1 }; // ¿ì ÇÏ ÁÂ »ó
+	static int[] dx = { 0, 1, 0, -1 }; // ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½
 	static int[] dy = { 1, 0, -1, 0 };
 
 	public static void main(String[] args) {

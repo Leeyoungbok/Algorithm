@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class À½¾ÇÇÁ·Î±×·¥ {
+public class ìŒì•…í”„ë¡œê·¸ë¨ {
 	static int N, M, idx;
 	static int[] arr, res;
 	static ArrayList<ArrayList<Integer>> list = new ArrayList<>();

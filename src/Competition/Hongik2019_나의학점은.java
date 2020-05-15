@@ -3,7 +3,7 @@ package Competition;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Hongik2019_³ªÀÇÇĞÁ¡Àº {
+public class Hongik2019_ë‚˜ì˜í•™ì ì€ {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

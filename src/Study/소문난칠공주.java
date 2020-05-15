@@ -43,7 +43,6 @@ public class 소문난칠공주 {
 			solve(0, 0, 0);
 			System.out.println(ans);
 		}
-		sc.close();
 	}
 
 	static void solve(int idx, int cnt, int n) {

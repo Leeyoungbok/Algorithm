@@ -7,33 +7,33 @@ public class A형_톱니바퀴 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-
-		for (int i = 0; i < 4; i++) {
-			String str = sc.nextLine();
-			for (int j = 0; j < 8; j++) {
-				gear[i][j] = Integer.parseInt(str.charAt(j) + "");
+		int TC = sc.nextInt();
+		for(int tc = 1 ; tc <= TC ; tc++) {
+			int N = sc.nextInt();
+			for (int i = 0; i < 4; i++) {
+				for (int j = 0; j < 8; j++) {
+					gear[i][j] = sc.nextInt();
+				}
 			}
-		}
-
-		int N = sc.nextInt();
-
-		for (int i = 0; i < N; i++) {
-			int n1 = sc.nextInt() - 1;
-			int n2 = sc.nextInt();
-
-			change(n1, n2);
-
-		}
-
-		int sum = 0;
-
-		for (int i = 0; i < 4; i++) {
-			if (gear[i][0] == 1) {
-				sum += Math.pow(2, i);
+			
+			
+			for (int i = 0; i < N; i++) {
+				int n1 = sc.nextInt() - 1;
+				int n2 = sc.nextInt();
+				
+				change(n1, n2);
+				
 			}
+			
+			int sum = 0;
+			
+			for (int i = 0; i < 4; i++) {
+				if (gear[i][0] == 1) {
+					sum += Math.pow(2, i);
+				}
+			}
+			System.out.println("#"+tc + " " +sum);
 		}
-		System.out.println(sum);
-		sc.close();
 	}
 
 	static void foward(int n1) {

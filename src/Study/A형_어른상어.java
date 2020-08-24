@@ -1,7 +1,5 @@
 package Study;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class A형_어른상어 {
@@ -71,12 +69,11 @@ public class A형_어른상어 {
 			}
 			shark[i] = new Shark(arr0[i][0], arr0[i][1], arr1[i], arr2, true);
 		}
-		
 
 		// Algorithm
 
 		for (int i = 1; i <= 1000; i++) {
-			
+
 //			for (int a = 1; a <= N; a++) {
 //				for (int b = 1; b <= N; b++) {
 //					System.out.print(smellMap[a][b][0]+""+smellMap[a][b][1] + " ");
@@ -84,7 +81,7 @@ public class A형_어른상어 {
 //				System.out.println();
 //			}
 //			System.out.println();
-			
+
 //			for (int a = 1; a <= N; a++) {
 //				for (int b = 1; b <= N; b++) {
 //					System.out.print(map[a][b] + " ");
@@ -92,7 +89,7 @@ public class A형_어른상어 {
 //				System.out.println();
 //			}
 //			System.out.println();
-			
+
 			for (int sharkNum = 1; sharkNum <= M; sharkNum++) {
 				if (!shark[sharkNum].liveCheck)
 					continue; // 죽었으면 패쓰

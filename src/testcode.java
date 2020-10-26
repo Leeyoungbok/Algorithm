@@ -72,7 +72,6 @@ public class testcode {
       Queue<Point> queue = new LinkedList<>();
       visit[taxi_i][taxi_j] = true;
       queue.add(new Point(taxi_i, taxi_j));
-      
       int count = 0;
       boolean check = false;
       while (!queue.isEmpty()) {
